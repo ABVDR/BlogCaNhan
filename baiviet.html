@@ -6,90 +6,71 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<!--===============================================================================================-->
-	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="fonts/fontawesome-5.0.8/css/fontawesome-all.min.css">
 	<!--===============================================================================================-->
-	<!--===============================================================================================-->
-	<!--===============================================================================================-->
-	<!--===============================================================================================-->
-	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.min.css">
-	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<!--===============================================================================================-->
+	<style>
+		/* Style các phần tử nội dung bài viết */
+		.content img {
+			max-width: 100%;
+			height: auto;
+			margin: 20px 0;
+		}
+
+		.back-btn {
+			display: inline-block;
+			background: #16a34a;
+			color: white;
+			padding: 12px 20px;
+			border-radius: 8px;
+			text-decoration: none;
+			font-size: 18px;
+			margin-top: 20px;
+		}
+
+		.back-btn:hover {
+			background: #14532d;
+		}
+	</style>
 </head>
 
 <body class="animsition">
 
 	<!-- Header -->
 	<header>
-		<!-- Header desktop -->
 		<div class="container-menu-desktop">
 			<div class="topbar">
 				<div class="content-topbar container h-100">
 					<div class="left-topbar">
-
-
-						<a href="#" class="left-topbar-item">
-							About
-						</a>
-
-						<a href="#" class="left-topbar-item">
-							Contact
-						</a>
-
-
+						<a href="cv.html" class="left-topbar-item">About</a>
+						<a href="cv.html" class="left-topbar-item">Contact</a>
 					</div>
 
 					<div class="right-topbar">
-						<a href="#">
-							<span class="fab fa-facebook-f"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-twitter"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-pinterest-p"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-vimeo-v"></span>
-						</a>
-
-						<a href="#">
-							<span class="fab fa-youtube"></span>
-						</a>
+						<a href="#"><span class="fab fa-facebook-f"></span></a>
+						<a href="#"><span class="fab fa-twitter"></span></a>
+						<a href="#"><span class="fab fa-pinterest-p"></span></a>
+						<a href="#"><span class="fab fa-vimeo-v"></span></a>
+						<a href="#"><span class="fab fa-youtube"></span></a>
 					</div>
 				</div>
 			</div>
-
-			<!-- Header Mobile -->
-			
-
-			<!-- Menu Mobile -->
-			
-		
+		</div>
 	</header>
 
 	<!-- Breadcrumb -->
 	<div class="container">
 		<div class="headline bg0 flex-wr-sb-c p-rl-20 p-tb-8">
 			<div class="f2-s-1 p-r-30 m-tb-6">
-				<a href="index.html" class="breadcrumb-item f1-s-3 cl9">
-					Home
-				</a>
-
-				<a href="blog-list-01.html" class="breadcrumb-item f1-s-3 cl9">
-					Blog
-				</a>
-
-				<span class="breadcrumb-item f1-s-3 cl9">
-					Các kiểu dữ liệu cơ bản trong Java
+				<a href="index.html" class="breadcrumb-item f1-s-3 cl9">Home</a>
+				<a href="blog.html" class="breadcrumb-item f1-s-3 cl9">Blog</a>
+				<span class="breadcrumb-item f1-s-3 cl9" id="breadcrumb-title">
+					<!-- Title of the article will be dynamically inserted here -->
 				</span>
 			</div>
 
@@ -110,6 +91,202 @@
 					<div class="p-r-10 p-r-0-sr991">
 						<!-- Blog Detail -->
 						<div class="p-b-70">
+							<!-- Dynamic content will go here -->
+							<div id="post-content">
+								<!-- This section will be populated by JavaScript -->
+							</div>
+
+
+						</div>
+
+						<!-- Leave a comment -->
+						<div>
+							<h4 class="f1-l-4 cl3 p-b-12">
+								Để lại bình luận
+							</h4>
+
+							<p class="f1-s-13 cl8 p-b-40">
+								Email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu *
+							</p>
+
+							<form>
+								<textarea class="bo-1-rad-3 bocl13 size-a-15 f1-s-13 cl5 plh6 p-rl-18 p-tb-14 m-b-20"
+									name="msg" placeholder="Bình luận..."></textarea>
+
+								<input class="bo-1-rad-3 bocl13 size-a-16 f1-s-13 cl5 plh6 p-rl-18 m-b-20" type="text"
+									name="name" placeholder="Tên*">
+
+								<input class="bo-1-rad-3 bocl13 size-a-16 f1-s-13 cl5 plh6 p-rl-18 m-b-20" type="text"
+									name="email" placeholder="Email*">
+
+								<input class="bo-1-rad-3 bocl13 size-a-16 f1-s-13 cl5 plh6 p-rl-18 m-b-20" type="text"
+									name="website" placeholder="Website">
+
+								<button class="size-a-17 bg2 borad-3 f1-s-12 cl0 hov-btn1 trans-03 p-rl-15 m-t-10">
+									Đăng bình luận
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<!-- Sidebar -->
+				<div class="col-md-10 col-lg-4 p-b-30">
+					<div class="p-l-10 p-rl-0-sr991 p-t-70">
+						<!-- Popular Posts -->
+						<div class="p-b-30">
+							<div class="how2 how2-cl4 flex-s-c">
+								<h3 class="f1-m-2 cl3 tab01-title">
+									Bài viết nổi bật
+								</h3>
+							</div>
+
+							<ul class="p-t-35">
+								<li class="flex-wr-sb-s p-b-30">
+									<a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
+										<img src="images/jvs.jpg" alt="IMG">
+									</a>
+
+									<div class="size-w-11">
+										<h6 class="p-b-4">
+											<a href="baiviet.html?id=2" class="f1-s-5 cl3 hov-cl10 trans-03">
+												Các kiểu dữ liệu trong JavaScript
+											</a>
+										</h6>
+
+										<span class="cl8 txt-center p-b-24">
+											<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+												JS
+											</a>
+
+											<span class="f1-s-3 m-rl-3">-</span>
+
+											<span class="f1-s-3">18 Tháng 10</span>
+										</span>
+									</div>
+								</li>
+								<li class="flex-wr-sb-s p-b-30">
+									<a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
+										<img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="IMG">
+									</a>
+
+									<div class="size-w-11">
+										<h6 class="p-b-4">
+											<a href="baiviet.html?id=3" class="f1-s-5 cl3 hov-cl10 trans-03">
+												Lập trình hướng đối tượng trong Java
+											</a>
+										</h6>
+
+										<span class="cl8 txt-center p-b-24">
+											<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+												Java
+											</a>
+
+											<span class="f1-s-3 m-rl-3">-</span>
+
+											<span class="f1-s-3">18 Tháng 2</span>
+										</span>
+									</div>
+								</li>
+								<li class="flex-wr-sb-s p-b-30">
+									<a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
+										<img src="images/What-is-Core-Java.png" alt="IMG">
+									</a>
+
+									<div class="size-w-11">
+										<h6 class="p-b-4">
+											<a href="baiviet.html?id=4" class="f1-s-5 cl3 hov-cl10 trans-03">
+												Cấu trúc điều khiển trong Java
+											</a>
+										</h6>
+
+										<span class="cl8 txt-center p-b-24">
+											<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+												Java
+											</a>
+
+											<span class="f1-s-3 m-rl-3">-</span>
+
+											<span class="f1-s-3">18 Tháng 2</span>
+										</span>
+									</div>
+								</li>
+
+								<!-- Add more popular posts here -->
+							</ul>
+						</div>
+
+						<!-- Tag -->
+						<div>
+							<div class="how2 how2-cl4 flex-s-c m-b-30">
+								<h3 class="f1-m-2 cl3 tab01-title">Thẻ</h3>
+							</div>
+
+							<div class="flex-wr-s-s m-rl--5">
+								<a href="#"
+									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">Java</a>
+								<a href="#"
+									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">JavaScript</a>
+								<!-- Add more tags here -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer>
+		<div class="bg2 p-t-40 p-b-25">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-4 p-b-20">
+						<p class="f1-s-1 cl11 p-b-16">
+							Mọi thắc mắc, liên hệ: <b>contact@myblog.com</b> hoặc gọi <b>(+84) 912 345 678</b>
+						</p>
+
+						<div class="p-t-15">
+							<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8"><span
+									class="fab fa-facebook-f"></span></a>
+							<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8"><span
+									class="fab fa-twitter"></span></a>
+							<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8"><span
+									class="fab fa-youtube"></span></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bg11">
+			<div class="container size-h-4 flex-c-c p-tb-15">
+				<span class="f1-s-1 cl0 txt-center">
+					Bản quyền ©
+					<script>document.write(new Date().getFullYear());</script> - Chau.
+				</span>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top"><span class="fas fa-angle-up"></span></span>
+	</div>
+
+	<script>
+		// JavaScript để lấy tham số 'id' từ URL và hiển thị bài viết tương ứng
+		function getQueryParams() {
+			const urlParams = new URLSearchParams(window.location.search);
+			return urlParams;
+		}
+
+		const posts = {
+			1: {
+				title: "Các kiểu dữ liệu cơ bản trong Java",
+				date: "17 Tháng 10",
+				author: "Chau",
+				content: `<div class="p-b-70">
 							<a href="#" class="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
 								Công nghệ
 							</a>
@@ -140,9 +317,7 @@
 								</a>
 							</div>
 
-							<div class="wrap-pic-max-w p-b-30">
-								<img src="images/blog-list-01.jpg" alt="IMG">
-							</div>
+							
 
 							<p class="f1-s-11 cl6 p-b-25">
 								Trong lập trình Java, việc hiểu rõ các <b>kiểu dữ liệu cơ bản</b> là bước nền tảng quan
@@ -278,247 +453,1263 @@ var number = 42;             // Kiểu int
 								thạo phần này, bạn nên tìm hiểu sâu hơn về <b>kiểu dữ liệu phức tạp</b> như
 								<code>ArrayList</code>, <code>HashMap</code>, hoặc cơ chế <b>Generics</b> trong Java.
 							</p>
-						</div>
+						</div> `
+			},
+			2: {
+				title: "Các kiểu dữ liệu trong JavaScript",
+				date: "20 Tháng 10",
+				author: "Chau",
+				content: `
+        <div class="p-b-70">
+            <a href="#" class="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
+                JavaScript
+            </a>
+
+            <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">
+                Các kiểu dữ liệu trong JavaScript
+            </h3>
+
+            <div class="flex-wr-s-s p-b-40">
+                <span class="f1-s-3 cl8 m-r-15">
+                    by <b>Chau</b> • 20 Tháng 10
+                </span>
+                <span class="f1-s-3 cl8 m-r-15">2350 Lượt xem</span>
+                <a href="#" class="f1-s-3 cl8 hov-cl10 trans-03 m-r-15">0 Bình luận</a>
+            </div>
+
+            
+
+            <p class="f1-s-11 cl6 p-b-25">
+                Trong JavaScript, kiểu dữ liệu quyết định giá trị mà biến có thể lưu trữ và cách thức xử lý các giá trị này. JavaScript hỗ trợ nhiều kiểu dữ liệu khác nhau, mỗi kiểu dữ liệu có những đặc điểm và cách sử dụng riêng.
+            </p>
+
+            <h4 class="f1-m-3 cl2 p-b-16">1. Kiểu dữ liệu nguyên thủy</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                JavaScript hỗ trợ 6 kiểu dữ liệu nguyên thủy (Primitive types). Các kiểu dữ liệu này được lưu trữ trực tiếp trong bộ nhớ và không thay đổi được.
+            </p>
+
+            <ul class="f1-s-11 cl6 p-b-25" style="margin-left:1rem;">
+                <li><b>String</b>: Dùng để lưu trữ chuỗi ký tự (ví dụ: "Hello World").</li>
+                <li><b>Number</b>: Dùng để lưu trữ số, bao gồm cả số nguyên và số thập phân (ví dụ: 123, 45.67).</li>
+                <li><b>Boolean</b>: Chỉ có hai giá trị là <code>true</code> và <code>false</code>, thường được dùng trong các phép so sánh (ví dụ: true, false).</li>
+                <li><b>Null</b>: Đại diện cho "không có giá trị" hoặc "không xác định".</li>
+                <li><b>Undefined</b>: Giá trị mặc định của một biến chưa được gán giá trị.</li>
+                <li><b>Symbol</b>: Được sử dụng để tạo ra các giá trị duy nhất và không thể thay đổi (chỉ có trong ES6+).</li>
+            </ul>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Ví dụ khai báo các kiểu dữ liệu nguyên thủy
+let name = "Chau";  // String
+let age = 25;       // Number
+let isStudent = true;  // Boolean
+let emptyValue = null;  // Null
+let undefinedValue;   // Undefined
+let uniqueId = Symbol('id');  // Symbol
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">2. Kiểu dữ liệu tham chiếu</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Ngoài các kiểu nguyên thủy, JavaScript còn có các kiểu dữ liệu tham chiếu (Reference types), bao gồm đối tượng, mảng, và hàm.
+            </p>
+
+            <ul class="f1-s-11 cl6 p-b-25" style="margin-left:1rem;">
+                <li><b>Object</b>: Là kiểu dữ liệu để lưu trữ các giá trị dạng key-value (ví dụ: { name: "Chau", age: 25 }).</li>
+                <li><b>Array</b>: Là một kiểu đối tượng đặc biệt dùng để lưu trữ danh sách các phần tử (ví dụ: [1, 2, 3]).</li>
+                <li><b>Function</b>: Là một kiểu đối tượng đặc biệt dùng để lưu trữ mã lệnh có thể gọi lại (ví dụ: function() {...}).</li>
+            </ul>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Ví dụ khai báo các kiểu dữ liệu tham chiếu
+let person = { name: "Chau", age: 25 }; // Object
+let numbers = [1, 2, 3, 4, 5]; // Array
+let greet = function() { console.log("Hello, world!"); }; // Function
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">3. Cách chuyển đổi giữa các kiểu dữ liệu</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Đôi khi bạn cần phải chuyển đổi giữa các kiểu dữ liệu trong JavaScript. JavaScript cung cấp nhiều cách để thực hiện điều này.
+            </p>
+
+            <ul class="f1-s-11 cl6 p-b-25" style="margin-left:1rem;">
+                <li><b>String to Number</b>: Dùng <code>Number()</code> hoặc <code>parseInt()</code> / <code>parseFloat()</code>.</li>
+                <li><b>Number to String</b>: Dùng <code>String()</code> hoặc <code>toString()</code>.</li>
+                <li><b>Boolean to String</b>: Dùng <code>String()</code>.</li>
+            </ul>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Chuyển đổi giữa các kiểu dữ liệu
+let num = 42;
+let str = String(num);  // Chuyển số thành chuỗi
+let bool = Boolean(0);  // Chuyển 0 thành false
+let int = parseInt("42");  // Chuyển chuỗi thành số nguyên
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">4. Kiểu dữ liệu NaN và Infinity</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                - <b>NaN</b>: Không phải là một số, thường xảy ra khi bạn thực hiện một phép toán không hợp lệ, ví dụ chia cho 0.
+                <br>
+                - <b>Infinity</b>: Kết quả của các phép toán vô hạn, ví dụ như chia một số cho 0.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// NaN
+let result = "hello" * 2;  // NaN
+console.log(result);  // In ra NaN
+
+// Infinity
+let inf = 1 / 0;  // Infinity
+console.log(inf);  // In ra Infinity
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">5. Kiểu dữ liệu BigInt (ES2020)</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                JavaScript cung cấp kiểu dữ liệu <b>BigInt</b> để lưu trữ các số nguyên lớn hơn giới hạn của kiểu <b>Number</b>.
+                <br>
+                Ví dụ, khi làm việc với các số nguyên có giá trị rất lớn, bạn có thể sử dụng BigInt.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+let bigIntValue = 123456789123456789123456789n;  // BigInt
+console.log(bigIntValue);  // In ra giá trị BigInt
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">Kết luận</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Kiểu dữ liệu là một phần quan trọng trong lập trình JavaScript. Việc hiểu và sử dụng đúng các kiểu dữ liệu giúp bạn tối ưu hóa mã nguồn và tránh được nhiều lỗi không mong muốn. Hãy chắc chắn rằng bạn hiểu rõ các kiểu dữ liệu trong JavaScript để lập trình hiệu quả hơn.
+            </p>
+        </div>
+    `
+			}, 3: {
+				title: "Lập trình hướng đối tượng trong Java",
+				date: "21 Tháng 10",
+				author: "Chau",
+				content: `
+        <div class="p-b-70">
+            <a href="#" class="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
+                Java
+            </a>
+
+            <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">
+                Lập trình hướng đối tượng trong Java
+            </h3>
+
+            <div class="flex-wr-s-s p-b-40">
+                <span class="f1-s-3 cl8 m-r-15">
+                    by <b>Chau</b> • 21 Tháng 10
+                </span>
+                <span class="f1-s-3 cl8 m-r-15">3120 Lượt xem</span>
+                <a href="#" class="f1-s-3 cl8 hov-cl10 trans-03 m-r-15">0 Bình luận</a>
+            </div>
+
+            
+
+            <p class="f1-s-11 cl6 p-b-25">
+                Lập trình hướng đối tượng (OOP) là một phương pháp lập trình sử dụng các đối tượng để mô phỏng các yếu tố trong thế giới thực. Java là một ngôn ngữ lập trình hoàn toàn hỗ trợ OOP, và việc hiểu rõ các nguyên lý của OOP sẽ giúp bạn phát triển các ứng dụng dễ bảo trì và mở rộng.
+            </p>
+
+            <h4 class="f1-m-3 cl2 p-b-16">1. Các khái niệm cơ bản trong OOP</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                OOP dựa trên bốn nguyên lý chính: <b>Đóng gói (Encapsulation)</b>, <b>Kế thừa (Inheritance)</b>, <b>Đa hình (Polymorphism)</b>, và <b>Trừu tượng (Abstraction)</b>.
+            </p>
+
+            <ul class="f1-s-11 cl6 p-b-25" style="margin-left:1rem;">
+                <li><b>Đóng gói (Encapsulation)</b>: Là việc gói các thuộc tính và phương thức trong một lớp để bảo vệ dữ liệu và chỉ cho phép truy cập thông qua các phương thức công khai.</li>
+                <li><b>Kế thừa (Inheritance)</b>: Là cơ chế cho phép một lớp con kế thừa các thuộc tính và phương thức của lớp cha.</li>
+                <li><b>Đa hình (Polymorphism)</b>: Là khả năng của đối tượng để có nhiều hành vi khác nhau. Thông qua đa hình, bạn có thể sử dụng phương thức với tên giống nhau nhưng có hành vi khác nhau.</li>
+                <li><b>Trừu tượng (Abstraction)</b>: Là việc ẩn đi các chi tiết cài đặt và chỉ cung cấp giao diện người dùng. Trừu tượng giúp đơn giản hóa việc phát triển và bảo trì phần mềm.</li>
+            </ul>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Ví dụ về OOP trong Java
+
+// Lớp "Person" với các thuộc tính và phương thức
+class Person {
+    private String name;
+    private int age;
+
+    public Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    public void display() {
+        System.out.println("Tên: " + name + ", Tuổi: " + age);
+    }
+}
+
+// Lớp "Student" kế thừa lớp "Person"
+class Student extends Person {
+    private String studentId;
+
+    public Student(String name, int age, String studentId) {
+        super(name, age);  // Gọi constructor của lớp cha
+        this.studentId = studentId;
+    }
+
+    @Override
+    public void display() {
+        super.display();  // Gọi phương thức display() của lớp cha
+        System.out.println("Mã sinh viên: " + studentId);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Tạo đối tượng Student
+        Student student = new Student("Chau", 21, "SV12345");
+        student.display();  // Hiển thị thông tin sinh viên
+    }
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">2. Đóng gói (Encapsulation)</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Đóng gói là một trong những nguyên lý quan trọng nhất trong OOP. Nó giúp bảo vệ dữ liệu của đối tượng và ngăn chặn việc truy cập trực tiếp từ bên ngoài lớp. Các thuộc tính của đối tượng sẽ được ẩn đi và chỉ có thể truy cập thông qua các phương thức công khai (getter và setter).
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Ví dụ về đóng gói trong Java
+
+class Person {
+    private String name;  // Thuộc tính bị ẩn (private)
+
+    // Getter
+    public String getName() {
+        return name;
+    }
+
+    // Setter
+    public void setName(String name) {
+        this.name = name;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person = new Person();
+        person.setName("Chau");  // Sử dụng setter để thay đổi giá trị
+        System.out.println(person.getName());  // Sử dụng getter để lấy giá trị
+    }
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">3. Kế thừa (Inheritance)</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Kế thừa cho phép bạn tạo ra các lớp con dựa trên các lớp cha đã có. Điều này giúp tái sử dụng mã nguồn và mở rộng các lớp hiện có mà không cần phải viết lại mã từ đầu.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Ví dụ về kế thừa trong Java
+
+class Animal {
+    public void sound() {
+        System.out.println("Làm tiếng động");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    public void sound() {
+        System.out.println("Gâu gâu");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog dog = new Dog();
+        dog.sound();  // In ra "Gâu gâu"
+    }
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">4. Đa hình (Polymorphism)</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Đa hình là khả năng của một đối tượng có thể thực hiện các hành vi khác nhau trong các ngữ cảnh khác nhau. Trong Java, bạn có thể sử dụng đa hình thông qua phương thức ghi đè (method overriding) hoặc nạp chồng (method overloading).
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Ví dụ về đa hình trong Java
+
+class Animal {
+    public void sound() {
+        System.out.println("Làm tiếng động");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    public void sound() {
+        System.out.println("Gâu gâu");
+    }
+}
+
+class Cat extends Animal {
+    @Override
+    public void sound() {
+        System.out.println("Meo meo");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        Animal cat = new Cat();
+        
+        dog.sound();  // Gâu gâu
+        cat.sound();  // Meo meo
+    }
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">5. Trừu tượng (Abstraction)</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Trừu tượng trong Java giúp ẩn đi chi tiết cài đặt của các lớp và chỉ cung cấp giao diện công khai cho người dùng. Điều này giúp bạn làm việc với các đối tượng mà không cần biết rõ về cách thức thực thi bên trong.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Ví dụ về trừu tượng trong Java
+
+abstract class Animal {
+    public abstract void sound();  // Phương thức trừu tượng
+}
+
+class Dog extends Animal {
+    @Override
+    public void sound() {
+        System.out.println("Gâu gâu");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal dog = new Dog();
+        dog.sound();  // Gâu gâu
+    }
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">Kết luận</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Lập trình hướng đối tượng là một phương pháp quan trọng trong phát triển phần mềm. Việc nắm vững các nguyên lý cơ bản như Đóng gói, Kế thừa, Đa hình và Trừu tượng sẽ giúp bạn phát triển các ứng dụng Java hiệu quả và dễ bảo trì hơn.
+            </p>
+        </div>
+    `
+			},
+			4: {
+				title: "Cấu trúc điều khiển trong Java",
+				date: "22 Tháng 10",
+				author: "Chau",
+				content: `
+        <div class="p-b-70">
+            <a href="#" class="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
+                Java
+            </a>
+
+            <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">
+                Cấu trúc điều khiển trong Java
+            </h3>
+
+            <div class="flex-wr-s-s p-b-40">
+                <span class="f1-s-3 cl8 m-r-15">
+                    by <b>Chau</b> • 22 Tháng 10
+                </span>
+                <span class="f1-s-3 cl8 m-r-15">1500 Lượt xem</span>
+                <a href="#" class="f1-s-3 cl8 hov-cl10 trans-03 m-r-15">0 Bình luận</a>
+            </div>
+
+            
+
+            <p class="f1-s-11 cl6 p-b-25">
+                Cấu trúc điều khiển là phần quan trọng trong lập trình, giúp điều khiển luồng chương trình theo các điều kiện nhất định. Trong Java, có nhiều cấu trúc điều khiển phổ biến, bao gồm các câu lệnh <b>if-else</b>, <b>switch</b>, vòng lặp <b>for</b>, <b>while</b>, và <b>do-while</b>.
+            </p>
+
+            <h4 class="f1-m-3 cl2 p-b-16">1. Câu lệnh if-else</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Câu lệnh <b>if</b> trong Java được sử dụng để kiểm tra một điều kiện và thực hiện một khối lệnh nếu điều kiện đó đúng. Nếu không, bạn có thể sử dụng câu lệnh <b>else</b> để thực hiện một khối lệnh khác.
+            </p>
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Ví dụ về câu lệnh if-else trong Java
+int age = 18;
+
+if (age >= 18) {
+    System.out.println("Bạn đủ tuổi trưởng thành.");
+} else {
+    System.out.println("Bạn chưa đủ tuổi trưởng thành.");
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">2. Câu lệnh switch</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Câu lệnh <b>switch</b> là một cách thay thế cho nhiều câu lệnh <b>if-else</b> khi bạn có nhiều điều kiện cần kiểm tra. Câu lệnh <b>switch</b> sẽ so sánh giá trị của một biểu thức với các giá trị trường hợp (case) đã cho.
+            </p>
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Ví dụ về câu lệnh switch trong Java
+int day = 2;
+String dayName;
+
+switch (day) {
+    case 1:
+        dayName = "Chủ Nhật";
+        break;
+    case 2:
+        dayName = "Thứ Hai";
+        break;
+    case 3:
+        dayName = "Thứ Ba";
+        break;
+    default:
+        dayName = "Ngày không hợp lệ";
+        break;
+}
+
+System.out.println("Hôm nay là: " + dayName);
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">3. Vòng lặp for</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Vòng lặp <b>for</b> thường được sử dụng khi bạn biết trước số lần lặp. Vòng lặp này bao gồm 3 phần: khởi tạo, điều kiện, và phần thay đổi.
+            </p>
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Ví dụ về vòng lặp for trong Java
+for (int i = 0; i < 5; i++) {
+    System.out.println("Lặp lần thứ: " + i);
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">4. Vòng lặp while</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Vòng lặp <b>while</b> sẽ tiếp tục lặp cho đến khi điều kiện được kiểm tra là sai. Đây là vòng lặp lý tưởng khi bạn không biết số lần lặp trước.
+            </p>
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Ví dụ về vòng lặp while trong Java
+int i = 0;
+while (i < 5) {
+    System.out.println("Lặp lần thứ: " + i);
+    i++;
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">5. Vòng lặp do-while</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Vòng lặp <b>do-while</b> tương tự như vòng lặp <b>while</b>, nhưng phần thân của vòng lặp sẽ được thực thi ít nhất một lần ngay cả khi điều kiện là sai.
+            </p>
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Ví dụ về vòng lặp do-while trong Java
+int i = 0;
+do {
+    System.out.println("Lặp lần thứ: " + i);
+    i++;
+} while (i < 5);
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">Kết luận</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Các cấu trúc điều khiển là những công cụ cơ bản giúp lập trình viên điều khiển luồng thực thi của chương trình. Việc sử dụng đúng các cấu trúc điều khiển trong Java sẽ giúp bạn xây dựng các chương trình linh hoạt và dễ dàng quản lý hơn.
+            </p>
+        </div>
+    `
+			},
+			5: {
+				title: "Cách sử dụng mảng trong JavaScript",
+				date: "23 Tháng 10",
+				author: "Chau",
+				content: `
+        <div class="p-b-70">
+            <a href="#" class="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
+                JavaScript
+            </a>
+
+            <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">
+                Cách sử dụng mảng trong JavaScript
+            </h3>
+
+            <div class="flex-wr-s-s p-b-40">
+                <span class="f1-s-3 cl8 m-r-15">
+                    by <b>Chau</b> • 23 Tháng 10
+                </span>
+                <span class="f1-s-3 cl8 m-r-15">1400 Lượt xem</span>
+                <a href="#" class="f1-s-3 cl8 hov-cl10 trans-03 m-r-15">0 Bình luận</a>
+            </div>
+
+           
+
+            <p class="f1-s-11 cl6 p-b-25">
+                Mảng (Array) là một kiểu dữ liệu rất phổ biến trong JavaScript, dùng để lưu trữ một tập hợp các giá trị. Một mảng có thể chứa nhiều loại dữ liệu khác nhau, bao gồm số, chuỗi, hoặc thậm chí là các mảng và đối tượng khác. Dưới đây là cách sử dụng mảng trong JavaScript.
+            </p>
+
+            <h4 class="f1-m-3 cl2 p-b-16">1. Khai báo mảng trong JavaScript</h4>
+          <p class="f1-s-11 cl6 p-b-25">
+    Bạn có thể khai báo mảng trong JavaScript bằng cách sử dụng dấu ngoặc vuông <code>[]</code>. Mảng có thể chứa bất kỳ kiểu dữ liệu nào.
+</p>
+
+<pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+    <code class="language-javascript">
+// Khai báo mảng trong JavaScript
+let fruits = ["Apple", "Banana", "Cherry"];
+let numbers = [1, 2, 3, 4, 5];
+let mixedArray = [1, "Hello", true, null];
+    </code>
+</pre>
 
 
-						<!-- Leave a comment -->
-						<div>
-							<h4 class="f1-l-4 cl3 p-b-12">
-								Để lại bình luận
-							</h4>
+            <h4 class="f1-m-3 cl2 p-b-16">2. Truy cập và thay đổi giá trị trong mảng</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Bạn có thể truy cập vào các phần tử trong mảng thông qua chỉ mục (index). Lưu ý rằng chỉ mục mảng bắt đầu từ 0.
+            </p>
 
-							<p class="f1-s-13 cl8 p-b-40">
-								Email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu *
-							</p>
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Truy cập phần tử trong mảng
+let fruits = ["Apple", "Banana", "Cherry"];
+console.log(fruits[0]);  // In ra "Apple"
+console.log(fruits[1]);  // In ra "Banana"
 
-							<form>
-								<textarea class="bo-1-rad-3 bocl13 size-a-15 f1-s-13 cl5 plh6 p-rl-18 p-tb-14 m-b-20"
-									name="msg" placeholder="Bình luận..."></textarea>
+// Thay đổi giá trị trong mảng
+fruits[1] = "Orange";  // Đổi phần tử thứ 2 thành "Orange"
+console.log(fruits);  // In ra ["Apple", "Orange", "Cherry"]
+                </code>
+            </pre>
 
-								<input class="bo-1-rad-3 bocl13 size-a-16 f1-s-13 cl5 plh6 p-rl-18 m-b-20" type="text"
-									name="name" placeholder="Tên*">
+            <h4 class="f1-m-3 cl2 p-b-16">3. Các phương thức cơ bản của mảng</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                JavaScript cung cấp nhiều phương thức hữu ích để làm việc với mảng. Dưới đây là một số phương thức cơ bản:
+            </p>
 
-								<input class="bo-1-rad-3 bocl13 size-a-16 f1-s-13 cl5 plh6 p-rl-18 m-b-20" type="text"
-									name="email" placeholder="Email*">
+            <ul class="f1-s-11 cl6 p-b-25" style="margin-left:1rem;">
+                <li><b>push()</b>: Thêm một hoặc nhiều phần tử vào cuối mảng.</li>
+                <li><b>pop()</b>: Loại bỏ phần tử cuối cùng khỏi mảng.</li>
+                <li><b>shift()</b>: Loại bỏ phần tử đầu tiên khỏi mảng.</li>
+                <li><b>unshift()</b>: Thêm một hoặc nhiều phần tử vào đầu mảng.</li>
+                <li><b>splice()</b>: Thêm hoặc xóa phần tử tại một vị trí chỉ định trong mảng.</li>
+                <li><b>slice()</b>: Tạo ra một mảng mới từ một phần của mảng cũ.</li>
+            </ul>
 
-								<input class="bo-1-rad-3 bocl13 size-a-16 f1-s-13 cl5 plh6 p-rl-18 m-b-20" type="text"
-									name="website" placeholder="Website">
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Ví dụ về các phương thức mảng
+let fruits = ["Apple", "Banana", "Cherry"];
 
-								<button class="size-a-17 bg2 borad-3 f1-s-12 cl0 hov-btn1 trans-03 p-rl-15 m-t-10">
-									Đăng bình luận
-								</button>
-							</form>
-						</div>
-					</div>
-				</div>
+// push() - Thêm phần tử vào cuối mảng
+fruits.push("Orange");
+console.log(fruits);  // In ra ["Apple", "Banana", "Cherry", "Orange"]
 
-				<!-- Sidebar -->
-				<div class="col-md-10 col-lg-4 p-b-30">
-					<div class="p-l-10 p-rl-0-sr991 p-t-70">
-						<!-- Popular Posts -->
-						<div class="p-b-30">
-							<div class="how2 how2-cl4 flex-s-c">
-								<h3 class="f1-m-2 cl3 tab01-title">
-									Bài viết nổi bật
-								</h3>
-							</div>
+// pop() - Loại bỏ phần tử cuối cùng
+fruits.pop();
+console.log(fruits);  // In ra ["Apple", "Banana", "Cherry"]
 
-							<ul class="p-t-35">
-								<li class="flex-wr-sb-s p-b-30">
-									<a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
-										<img src="images/popular-post-04.jpg" alt="IMG">
-									</a>
+// shift() - Loại bỏ phần tử đầu tiên
+fruits.shift();
+console.log(fruits);  // In ra ["Banana", "Cherry"]
 
-									<div class="size-w-11">
-										<h6 class="p-b-4">
-											<a href="blog-detail-02.html" class="f1-s-5 cl3 hov-cl10 trans-03">
-												Hiểu nhanh OOP trong 10 phút
-											</a>
-										</h6>
+// unshift() - Thêm phần tử vào đầu mảng
+fruits.unshift("Grapes");
+console.log(fruits);  // In ra ["Grapes", "Banana", "Cherry"]
 
-										<span class="cl8 txt-center p-b-24">
-											<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
-												Nhạc
-											</a>
+// splice() - Xóa phần tử tại chỉ mục 1 và thêm "Orange"
+fruits.splice(1, 1, "Orange");
+console.log(fruits);  // In ra ["Grapes", "Orange", "Cherry"]
 
-											<span class="f1-s-3 m-rl-3">
-												-
-											</span>
+// slice() - Lấy một phần mảng từ chỉ mục 0 đến 2 (không bao gồm chỉ mục 2)
+let newFruits = fruits.slice(0, 2);
+console.log(newFruits);  // In ra ["Grapes", "Orange"]
+                </code>
+            </pre>
 
-											<span class="f1-s-3">
-												18 Tháng 2
-											</span>
-										</span>
-									</div>
-								</li>
+            <h4 class="f1-m-3 cl2 p-b-16">4. Duyệt mảng với phương thức forEach</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Phương thức <code>forEach()</code> giúp bạn dễ dàng duyệt qua tất cả các phần tử trong mảng và thực hiện một hành động cho mỗi phần tử.
+            </p>
 
-								<li class="flex-wr-sb-s p-b-30">
-									<a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
-										<img src="images/popular-post-05.jpg" alt="IMG">
-									</a>
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Duyệt mảng với forEach()
+let fruits = ["Apple", "Banana", "Cherry"];
+fruits.forEach(function(fruit, index) {
+    console.log(index + ": " + fruit);
+});
+                </code>
+            </pre>
 
-									<div class="size-w-11">
-										<h6 class="p-b-4">
-											<a href="blog-detail-02.html" class="f1-s-5 cl3 hov-cl10 trans-03">
-												Phân biệt == và === bằng ví dụ
-											</a>
-										</h6>
+            <h4 class="f1-m-3 cl2 p-b-16">5. Tìm kiếm phần tử trong mảng</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Để tìm kiếm một phần tử trong mảng, bạn có thể sử dụng các phương thức như <code>indexOf()</code>, <code>includes()</code>, hoặc <code>find()</code>.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Tìm vị trí phần tử trong mảng với indexOf()
+let fruits = ["Apple", "Banana", "Cherry"];
+let index = fruits.indexOf("Banana");
+console.log(index);  // In ra 1 (vì "Banana" là phần tử thứ 2)
+
+// Kiểm tra xem phần tử có tồn tại trong mảng không với includes()
+let exists = fruits.includes("Cherry");
+console.log(exists);  // In ra true
+
+// Tìm phần tử đầu tiên thỏa mãn điều kiện với find()
+let found = fruits.find(function(fruit) {
+    return fruit.startsWith("C");
+});
+console.log(found);  // In ra "Cherry"
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">Kết luận</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Mảng là một trong những cấu trúc dữ liệu mạnh mẽ và linh hoạt trong JavaScript. Việc hiểu rõ cách khai báo, truy cập, và thao tác với mảng sẽ giúp bạn giải quyết nhiều vấn đề trong lập trình một cách hiệu quả. Hãy thử áp dụng các phương thức mảng để làm việc với các tập hợp dữ liệu trong các dự án của bạn!
+            </p>
+        </div>
+    `
+			},
+
+6: {
+    title: "Cách sử dụng hàm trong JavaScript",
+    date: "24 Tháng 10",
+    author: "Chau",
+    content: `
+        <div class="p-b-70">
+            <a href="#" class="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
+                JavaScript
+            </a>
+
+            <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">
+                Cách sử dụng hàm trong JavaScript
+            </h3>
+
+            <div class="flex-wr-s-s p-b-40">
+                <span class="f1-s-3 cl8 m-r-15">
+                    by <b>Chau</b> • 24 Tháng 10
+                </span>
+                <span class="f1-s-3 cl8 m-r-15">1100 Lượt xem</span>
+                <a href="#" class="f1-s-3 cl8 hov-cl10 trans-03 m-r-15">0 Bình luận</a>
+            </div>
+
+            
+
+            <p class="f1-s-11 cl6 p-b-25">
+                Hàm (function) là một trong những khái niệm cơ bản trong lập trình JavaScript. Hàm giúp bạn nhóm các câu lệnh lại và thực thi khi cần thiết, giúp giảm thiểu mã lặp lại và tăng tính tổ chức của chương trình. Trong JavaScript, bạn có thể định nghĩa và gọi hàm một cách rất dễ dàng.
+            </p>
+
+            <h4 class="f1-m-3 cl2 p-b-16">1. Định nghĩa hàm trong JavaScript</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Bạn có thể định nghĩa hàm trong JavaScript bằng cách sử dụng từ khóa <code>function</code> theo cú pháp sau:
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Định nghĩa một hàm đơn giản
+function greet() {
+    console.log("Chào bạn!");
+}
+
+// Gọi hàm
+greet();  // In ra "Chào bạn!"
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">2. Hàm với tham số</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Hàm có thể nhận các tham số để sử dụng trong quá trình thực thi. Bạn có thể định nghĩa các tham số khi khai báo hàm.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Hàm với tham số
+function greet(name) {
+    console.log("Chào " + name + "!");
+}
+
+// Gọi hàm với tham số
+greet("Chau");  // In ra "Chào Chau!"
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">3. Hàm trả về giá trị</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Hàm có thể trả về một giá trị sau khi thực thi. Để trả về giá trị, bạn sử dụng từ khóa <code>return</code>.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Hàm trả về giá trị
+function add(a, b) {
+    return a + b;
+}
+
+// Gọi hàm và lưu kết quả vào biến
+let result = add(3, 5);
+console.log(result);  // In ra 8
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">4. Hàm ẩn danh (Anonymous Function)</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Hàm ẩn danh là các hàm không có tên và thường được sử dụng khi cần truyền hàm làm đối số hoặc trong các tình huống mà bạn không cần gọi lại hàm đó.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Hàm ẩn danh
+let greet = function(name) {
+    console.log("Chào " + name + "!");
+};
+
+greet("Chau");  // In ra "Chào Chau!"
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">5. Hàm mũi tên (Arrow Function)</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Hàm mũi tên (Arrow Function) là cú pháp ngắn gọn hơn để định nghĩa hàm. Hàm mũi tên không sử dụng từ khóa <code>function</code> mà thay vào đó là dấu mũi tên <code>=></code>.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Hàm mũi tên
+let greet = (name) => {
+    console.log("Chào " + name + "!");
+};
+
+greet("Chau");  // In ra "Chào Chau!"
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">6. Hàm callback</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Hàm callback là một hàm được truyền vào như một đối số của một hàm khác và được gọi lại khi một sự kiện hoặc hành động hoàn thành.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Hàm callback
+function processData(data, callback) {
+    console.log("Đang xử lý dữ liệu...");
+    callback(data);
+}
+
+function displayData(data) {
+    console.log("Dữ liệu: " + data);
+}
+
+// Gọi hàm với callback
+processData("Dữ liệu bài viết", displayData);
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">Kết luận</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Hàm trong JavaScript là một công cụ rất mạnh mẽ và linh hoạt, giúp bạn tổ chức mã nguồn tốt hơn, giảm sự trùng lặp và dễ dàng tái sử dụng mã. Hãy làm quen với các kiểu hàm trong JavaScript để tăng hiệu quả lập trình của bạn.
+            </p>
+        </div>
+    `
+},
+7: {
+    title: "Cấu trúc điều khiển trong Java",
+    date: "25 Tháng 10",
+    author: "Chau",
+    content: `
+        <div class="p-b-70">
+            <a href="#" class="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
+                Java
+            </a>
+
+            <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">
+                Cấu trúc điều khiển trong Java
+            </h3>
+
+            <div class="flex-wr-s-s p-b-40">
+                <span class="f1-s-3 cl8 m-r-15">
+                    by <b>Chau</b> • 25 Tháng 10
+                </span>
+                <span class="f1-s-3 cl8 m-r-15">1200 Lượt xem</span>
+                <a href="#" class="f1-s-3 cl8 hov-cl10 trans-03 m-r-15">0 Bình luận</a>
+            </div>
+
+           
+
+            <p class="f1-s-11 cl6 p-b-25">
+                Cấu trúc điều khiển là phần không thể thiếu trong lập trình Java. Nó cho phép bạn điều khiển luồng thực thi của chương trình dựa trên các điều kiện cụ thể. Trong Java, các câu lệnh điều khiển phổ biến bao gồm <b>if-else</b>, <b>switch</b>, các vòng lặp <b>for</b>, <b>while</b>, và <b>do-while</b>.
+            </p>
+
+            <h4 class="f1-m-3 cl2 p-b-16">1. Câu lệnh if-else trong Java</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Câu lệnh <b>if</b> trong Java dùng để kiểm tra một điều kiện và thực hiện một hành động nếu điều kiện đó đúng. Câu lệnh <b>else</b> cho phép thực hiện một hành động khác khi điều kiện không đúng.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Câu lệnh if-else trong Java
+int age = 20;
+if (age >= 18) {
+    System.out.println("Bạn là người trưởng thành.");
+} else {
+    System.out.println("Bạn chưa đủ tuổi trưởng thành.");
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">2. Câu lệnh switch trong Java</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Câu lệnh <b>switch</b> được sử dụng khi có nhiều lựa chọn và bạn muốn kiểm tra một giá trị cụ thể và thực hiện hành động dựa trên giá trị đó.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Câu lệnh switch trong Java
+int day = 3;
+String dayName;
+switch (day) {
+    case 1:
+        dayName = "Chủ Nhật";
+        break;
+    case 2:
+        dayName = "Thứ Hai";
+        break;
+    case 3:
+        dayName = "Thứ Ba";
+        break;
+    default:
+        dayName = "Ngày không hợp lệ";
+        break;
+}
+System.out.println("Hôm nay là: " + dayName);
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">3. Vòng lặp for trong Java</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Vòng lặp <b>for</b> được sử dụng khi bạn biết trước số lần cần lặp. Vòng lặp này bao gồm ba phần: khởi tạo, điều kiện, và thay đổi.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Vòng lặp for trong Java
+for (int i = 1; i <= 5; i++) {
+    System.out.println("Lặp lần thứ: " + i);
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">4. Vòng lặp while trong Java</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Vòng lặp <b>while</b> sẽ tiếp tục lặp cho đến khi điều kiện được kiểm tra là sai. Đây là một loại vòng lặp thích hợp khi bạn không biết trước số lần lặp.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Vòng lặp while trong Java
+int i = 1;
+while (i <= 5) {
+    System.out.println("Lặp lần thứ: " + i);
+    i++;
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">5. Vòng lặp do-while trong Java</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Vòng lặp <b>do-while</b> giống như vòng lặp <b>while</b>, nhưng phần thân vòng lặp luôn được thực thi ít nhất một lần, ngay cả khi điều kiện không đúng.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Vòng lặp do-while trong Java
+int i = 1;
+do {
+    System.out.println("Lặp lần thứ: " + i);
+    i++;
+} while (i <= 5);
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">Kết luận</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Các cấu trúc điều khiển trong Java giúp bạn điều khiển luồng chương trình, thực hiện các hành động dựa trên các điều kiện cụ thể, và lặp lại các hành động khi cần thiết. Việc sử dụng đúng các cấu trúc điều khiển sẽ giúp bạn viết các chương trình linh hoạt và dễ bảo trì.
+            </p>
+        </div>
+    `
+},
+8: {
+    title: "Các lớp và đối tượng trong Java",
+    date: "26 Tháng 10",
+    author: "Chau",
+    content: `
+        <div class="p-b-70">
+            <a href="#" class="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
+                Java
+            </a>
+
+            <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">
+                Các lớp và đối tượng trong Java
+            </h3>
+
+            <div class="flex-wr-s-s p-b-40">
+                <span class="f1-s-3 cl8 m-r-15">
+                    by <b>Chau</b> • 26 Tháng 10
+                </span>
+                <span class="f1-s-3 cl8 m-r-15">1350 Lượt xem</span>
+                <a href="#" class="f1-s-3 cl8 hov-cl10 trans-03 m-r-15">0 Bình luận</a>
+            </div>
+
+           
+
+            <p class="f1-s-11 cl6 p-b-25">
+                Lớp (class) và đối tượng (object) là những khái niệm quan trọng trong lập trình hướng đối tượng (OOP), và Java là một ngôn ngữ hoàn toàn hỗ trợ OOP. Lớp là bản thiết kế (blueprint) để tạo ra các đối tượng, trong khi đối tượng là các thực thể cụ thể được tạo ra từ lớp đó.
+            </p>
+
+            <h4 class="f1-m-3 cl2 p-b-16">1. Lớp (Class) trong Java</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Lớp trong Java là một mô hình hoặc bản thiết kế cho các đối tượng. Lớp định nghĩa các thuộc tính (biến) và phương thức (hàm) mà các đối tượng của lớp đó sẽ có.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Định nghĩa lớp trong Java
+class Person {
+    String name;  // Thuộc tính
+    int age;      // Thuộc tính
+
+    // Phương thức
+    void introduce() {
+        System.out.println("Xin chào, tôi là " + name + " và tôi " + age + " tuổi.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Tạo đối tượng từ lớp Person
+        Person person1 = new Person();
+        person1.name = "Chau";
+        person1.age = 21;
+
+        person1.introduce();  // Gọi phương thức
+    }
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">2. Đối tượng (Object) trong Java</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Đối tượng trong Java là một thể hiện (instance) cụ thể của một lớp. Để tạo một đối tượng, bạn sử dụng từ khóa <code>new</code> và gọi constructor của lớp.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Định nghĩa lớp Person
+class Person {
+    String name;
+    int age;
+
+    // Phương thức
+    void introduce() {
+        System.out.println("Xin chào, tôi là " + name + " và tôi " + age + " tuổi.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Tạo đối tượng Person
+        Person person1 = new Person();
+        person1.name = "Chau";
+        person1.age = 21;
+
+        // Gọi phương thức từ đối tượng
+        person1.introduce();  // In ra: "Xin chào, tôi là Chau và tôi 21 tuổi."
+    }
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">3. Constructor trong Java</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Constructor là một phương thức đặc biệt được gọi khi tạo đối tượng từ lớp. Nó thường được sử dụng để khởi tạo giá trị cho các thuộc tính của đối tượng.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Định nghĩa lớp Person với Constructor
+class Person {
+    String name;
+    int age;
+
+    // Constructor
+    Person(String name, int age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    void introduce() {
+        System.out.println("Xin chào, tôi là " + name + " và tôi " + age + " tuổi.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Tạo đối tượng và khởi tạo thông qua constructor
+        Person person1 = new Person("Chau", 21);
+        person1.introduce();  // In ra: "Xin chào, tôi là Chau và tôi 21 tuổi."
+    }
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">4. Phương thức trong Java</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Phương thức trong Java là các hành động hoặc hành vi mà đối tượng có thể thực hiện. Phương thức có thể nhận tham số và trả về giá trị.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Lớp Person với phương thức tính tuổi
+class Person {
+    String name;
+    int birthYear;
+
+    // Constructor
+    Person(String name, int birthYear) {
+        this.name = name;
+        this.birthYear = birthYear;
+    }
+
+    // Phương thức
+    int calculateAge(int currentYear) {
+        return currentYear - birthYear;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Person person1 = new Person("Chau", 2000);
+        System.out.println(person1.name + " hiện tại " + person1.calculateAge(2021) + " tuổi.");
+    }
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">5. Kế thừa (Inheritance) trong Java</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Kế thừa là một khái niệm quan trọng trong lập trình hướng đối tượng, cho phép bạn tạo ra một lớp con từ một lớp cha. Lớp con sẽ kế thừa các thuộc tính và phương thức của lớp cha.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-java">
+// Lớp cha Animal
+class Animal {
+    void speak() {
+        System.out.println("Động vật phát ra tiếng động");
+    }
+}
+
+// Lớp con Dog kế thừa từ Animal
+class Dog extends Animal {
+    void speak() {
+        System.out.println("Chó sủa");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal animal = new Animal();
+        animal.speak();  // In ra: "Động vật phát ra tiếng động"
+
+        Dog dog = new Dog();
+        dog.speak();  // In ra: "Chó sủa"
+    }
+}
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">Kết luận</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Lớp và đối tượng là nền tảng của lập trình hướng đối tượng trong Java. Việc hiểu và áp dụng các khái niệm này sẽ giúp bạn phát triển các ứng dụng linh hoạt và dễ bảo trì. Lớp giúp bạn tổ chức mã nguồn, và đối tượng là các thực thể cụ thể bạn thao tác trong chương trình.
+            </p>
+        </div>
+    `
+},9: {
+    title: "Cách làm việc với sự kiện trong JavaScript",
+    date: "27 Tháng 10",
+    author: "Chau",
+    content: `
+        <div class="p-b-70">
+            <a href="#" class="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
+                JavaScript
+            </a>
+
+            <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">
+                Cách làm việc với sự kiện trong JavaScript
+            </h3>
+
+            <div class="flex-wr-s-s p-b-40">
+                <span class="f1-s-3 cl8 m-r-15">
+                    by <b>Chau</b> • 27 Tháng 10
+                </span>
+                <span class="f1-s-3 cl8 m-r-15">1500 Lượt xem</span>
+                <a href="#" class="f1-s-3 cl8 hov-cl10 trans-03 m-r-15">0 Bình luận</a>
+            </div>
+
+           
+
+            <p class="f1-s-11 cl6 p-b-25">
+                Sự kiện (event) trong JavaScript là những hành động mà người dùng hoặc hệ thống thực hiện và bạn có thể theo dõi và xử lý các hành động này. JavaScript cung cấp các cơ chế để làm việc với các sự kiện như click, hover, keypress, và nhiều loại sự kiện khác. Việc xử lý sự kiện giúp bạn tạo ra các ứng dụng tương tác hơn.
+            </p>
+
+            <h4 class="f1-m-3 cl2 p-b-16">1. Sự kiện cơ bản trong JavaScript</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Các sự kiện cơ bản trong JavaScript thường liên quan đến các hành động của người dùng như click chuột, di chuột, nhập liệu, v.v. Bạn có thể gắn các hàm xử lý sự kiện (event handlers) vào các phần tử HTML để theo dõi những sự kiện này.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Sự kiện click đơn giản
+document.getElementById("myButton").onclick = function() {
+    alert("Bạn đã click vào nút!");
+};
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">2. Gắn sự kiện với addEventListener</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Phương thức <code>addEventListener</code> là cách tiếp cận hiện đại và mạnh mẽ để xử lý sự kiện trong JavaScript. Bạn có thể sử dụng <code>addEventListener</code> để gắn nhiều sự kiện cho cùng một phần tử mà không cần phải ghi đè lên các sự kiện trước đó.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Gắn sự kiện click với addEventListener
+document.getElementById("myButton").addEventListener("click", function() {
+    alert("Bạn đã click vào nút!");
+});
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">3. Các loại sự kiện phổ biến trong JavaScript</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                JavaScript hỗ trợ nhiều loại sự kiện mà bạn có thể xử lý, dưới đây là một số sự kiện phổ biến:
+            </p>
+
+            <ul class="f1-s-11 cl6 p-b-25" style="margin-left:1rem;">
+                <li><b>click</b>: Xảy ra khi người dùng click vào một phần tử.</li>
+                <li><b>mouseover</b>: Xảy ra khi người dùng di chuột qua một phần tử.</li>
+                <li><b>keydown</b>: Xảy ra khi người dùng nhấn phím trên bàn phím.</li>
+                <li><b>submit</b>: Xảy ra khi người dùng gửi một biểu mẫu.</li>
+                <li><b>focus</b>: Xảy ra khi một phần tử nhận được tiêu điểm (focus), ví dụ như khi người dùng nhấp vào ô input.</li>
+                <li><b>change</b>: Xảy ra khi giá trị của một phần tử input hoặc textarea thay đổi.</li>
+            </ul>
+
+            <h4 class="f1-m-3 cl2 p-b-16">4. Ví dụ về sự kiện mouseover</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Bạn có thể sử dụng sự kiện <code>mouseover</code> để thay đổi màu sắc của một phần tử khi người dùng di chuột qua nó.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Ví dụ về sự kiện mouseover
+document.getElementById("myDiv").addEventListener("mouseover", function() {
+    this.style.backgroundColor = "yellow";
+});
+
+document.getElementById("myDiv").addEventListener("mouseout", function() {
+    this.style.backgroundColor = "white";
+});
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">5. Sự kiện onsubmit và xử lý form</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Bạn có thể sử dụng sự kiện <code>onsubmit</code> để xử lý khi người dùng gửi biểu mẫu. Điều này rất hữu ích khi bạn muốn kiểm tra dữ liệu trước khi gửi biểu mẫu.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Xử lý sự kiện onsubmit trong form
+document.getElementById("myForm").onsubmit = function(event) {
+    event.preventDefault();  // Ngừng gửi biểu mẫu
+    alert("Biểu mẫu đã được gửi!");
+};
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">6. Sự kiện onkeyup và onkeydown</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Các sự kiện <code>onkeyup</code> và <code>onkeydown</code> rất hữu ích khi bạn muốn xử lý các hành động khi người dùng nhập văn bản vào ô input.
+            </p>
+
+            <pre class="f1-s-11 cl6 p-b-25" style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;">
+                <code class="language-javascript">
+// Xử lý sự kiện onkeyup và onkeydown
+document.getElementById("myInput").addEventListener("keyup", function() {
+    console.log("Bạn đã nhập: " + this.value);
+});
+                </code>
+            </pre>
+
+            <h4 class="f1-m-3 cl2 p-b-16">Kết luận</h4>
+            <p class="f1-s-11 cl6 p-b-25">
+                Việc làm việc với sự kiện là một trong những khía cạnh quan trọng của lập trình JavaScript. Bằng cách sử dụng sự kiện, bạn có thể làm cho trang web của mình trở nên tương tác và đáp ứng tốt hơn với hành động của người dùng. Hãy thử áp dụng các sự kiện này vào các dự án của bạn để nâng cao trải nghiệm người dùng.
+            </p>
+        </div>
+    `
+}
 
 
-									</div>
-								</li>
-
-								<li class="flex-wr-sb-s p-b-30">
-									<a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
-										<img src="images/popular-post-06.jpg" alt="IMG">
-									</a>
-
-									<div class="size-w-11">
-										<h6 class="p-b-4">
-											<a href="blog-detail-02.html" class="f1-s-5 cl3 hov-cl10 trans-03">
-												Stream API: map, filter, reduce
-											</a>
-										</h6>
-
-										<span class="cl8 txt-center p-b-24">
-											<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
-												Người nổi tiếng
-											</a>
-
-											<span class="f1-s-3 m-rl-3">
-												-
-											</span>
-
-											<span class="f1-s-3">
-												12 Tháng 2
-											</span>
-										</span>
-									</div>
-								</li>
-							</ul>
-						</div>
-
-						<!-- Tag -->
-						<div>
-							<div class="how2 how2-cl4 flex-s-c m-b-30">
-								<h3 class="f1-m-2 cl3 tab01-title">
-									Thẻ
-								</h3>
-							</div>
-
-							<div class="flex-wr-s-s m-rl--5">
-								<a href="#"
-									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-									Java
-								</a>
-
-								<a href="#"
-									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-									JavaScript
-								</a>
-
-								<a href="#"
-									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-									Lập trình hướng đối tượng
-								</a>
-
-								<a href="#"
-									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-									Cấu trúc dữ liệu
-								</a>
-
-								<a href="#"
-									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-									Hàm & Biểu thức
-								</a>
-
-								<a href="#"
-									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-									Cú pháp cơ bản
-								</a>
-
-								<a href="#"
-									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-									Xử lý chuỗi
-								</a>
-
-								<a href="#"
-									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
-									Lỗi & Ngoại lệ
-								</a>
-							</div>
-
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 
 
 
-	<!-- Footer -->
-	<footer>
-	<div class="bg2 p-t-40 p-b-25">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-4 p-b-20">
-					
 
-					<div>
-						
-						<p class="f1-s-1 cl11 p-b-16">
-							Mọi thắc mắc, liên hệ: <b>contact@myblog.com</b> hoặc gọi <b>(+84) 912 345 678</b>
-						</p>
+		};
 
-						<div class="p-t-15">
-							<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-								<span class="fab fa-facebook-f"></span>
-							</a>
+		// Hàm để tải nội dung bài viết
+		function loadPostContent() {
+			const params = getQueryParams();
+			const postId = params.get('id');
+			const post = posts[postId];
 
-							<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-								<span class="fab fa-twitter"></span>
-							</a>
-							<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
-								<span class="fab fa-youtube"></span>
-							</a>
-						</div>
-					</div>
-				</div>
+			if (post) {
+				document.getElementById('breadcrumb-title').textContent = post.title;
+				const postContent = document.getElementById('post-content');
+				postContent.innerHTML = post.content;
+			} else {
+				document.getElementById('post-content').innerHTML = "<p>Bài viết không tồn tại!</p>";
+			}
+		}
 
-			</div>
-		</div>
-	</div>
+		// Gọi hàm khi trang được tải
+		loadPostContent();
+	</script>
 
-	<div class="bg11">
-		<div class="container size-h-4 flex-c-c p-tb-15">
-			<span class="f1-s-1 cl0 txt-center">
-				Bản quyền © 
-				<script>document.write(new Date().getFullYear());</script>
-				- Chau. 
-			
-			</span>
-		</div>
-	</div>
-</footer>
-
-
-	<!-- Back to top -->
-	<div class="btn-back-to-top" id="myBtn">
-		<span class="symbol-btn-back-to-top">
-			<span class="fas fa-angle-up"></span>
-		</span>
-	</div>
-
-
-	<!--===============================================================================================-->
 	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-	<!--===============================================================================================-->
 	<script src="vendor/animsition/js/animsition.min.js"></script>
-	<!--===============================================================================================-->
 	<script src="vendor/bootstrap/js/popper.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-	<!--===============================================================================================-->
 	<script src="js/main.js"></script>
 
 </body>

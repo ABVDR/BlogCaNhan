@@ -2,949 +2,594 @@
 <html lang="en">
 
 <head>
-   <meta charset="utf-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-   <meta name="description" content="Start your development with Meyawo landing page.">
-   <meta name="author" content="Devcrud">
-   <title>Meyawo Landing page | Components</title>
-   <!-- font icons -->
-   <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
-   <!-- Bootstrap + Steller  -->
-   <link rel="stylesheet" href="assets/css/meyawo.css">
+	<title>Blog Detail With Sidebar</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/fontawesome-5.0.8/css/fontawesome-all.min.css">
+	<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.min.css">
+	<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<!--===============================================================================================-->
 </head>
 
-<body>
+<body class="animsition">
 
-   <!-- Page Header -->
-   <header class="header header-mini">
-      <div class="header-title">Components</div>
-      <nav aria-label="breadcrumb">
-         <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="/">Home</a></li>
-            <li class="breadcrumb-item active" aria-current="page">Components</li>
-         </ol>
-      </nav>
-   </header> <!-- End Of Page Header -->
+	<!-- Header -->
+	<header>
+		<!-- Header desktop -->
+		<div class="container-menu-desktop">
+			<div class="topbar">
+				<div class="content-topbar container h-100">
+					<div class="left-topbar">
 
-   <!-- main content -->
-   <div class="container">
 
-      <!-- Buttons -->
-      <h3 class="mt-5">Buttons</h3>
-      <hr>
-      <h6 class="section-secondary-title">Styles :</h6>
-      <button class="btn btn-primary">Default</button>
-      <button class="btn btn-outline-primary">outline</button>
-      <button class="btn btn-primary rounded">Rounded</button>
-      <button class="btn btn-primary rounded"><i class="ti-thumb-up pr-1"></i> With Icon</button>
-      <button class="btn btn-primary circle"><i class="ti-heart"></i></button>
+						<a href="#" class="left-topbar-item">
+							About
+						</a>
 
-      <h6 class="section-secondary-title mt-5">Sizes :</h6>
-      <button class="btn btn-primary btn-lg">Large</button>
-      <button class="btn btn-primary ">Regular</button>
-      <button class="btn btn-primary btn-sm">Small</button>
-      <button class="btn btn-primary w-sm ml-3">w-sm</button>
-      <button class="btn btn-primary w-md">w-md</button>
-      <button class="btn btn-primary w-lg">w-lg</button>
+						<a href="#" class="left-topbar-item">
+							Contact
+						</a>
 
-      <h6 class="section-secondary-title mt-5">Colors :</h6>
-      <button type="button" class="btn btn-primary">Primary</button>
-      <button type="button" class="btn btn-secondary">Secondary</button>
-      <button type="button" class="btn btn-success">Success</button>
-      <button type="button" class="btn btn-danger">Danger</button>
-      <button type="button" class="btn btn-warning">Warning</button>
-      <button type="button" class="btn btn-info">Info</button>
-      <button type="button" class="btn btn-light">Light</button>
-      <button type="button" class="btn btn-dark">Dark</button>
 
-      <h6 class="section-secondary-title mt-5">Buttons Tags :</h6>
-      <button class="btn btn-primary" type="submit">Button</button>
-      <input class="btn btn-primary" type="button" value="Input">
-      <input class="btn btn-primary" type="submit" value="Submit">
-      <input class="btn btn-primary" type="reset" value="Reset">
+					</div>
 
-      <!-- devider -->
-      <div class="py-5"></div>
+					<div class="right-topbar">
+						<a href="#">
+							<span class="fab fa-facebook-f"></span>
+						</a>
 
-      <!-- Inputs -->
-      <h3>Inputs</h3>
-      <hr>
-      <div class="row mt-5">
-         <div class="col-md-6">
-            <h6 class="section-secondary-title">Form controls :</h6>
-            <div class="form-group">
-               <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email address">
-            </div>
-            <div class="form-group">
-               <input type="date" class="form-control" id="exampleFormControlInput1" placeholder="Date">
-            </div>
-            <div class="form-group">
-               <input class="form-control" type="text" placeholder="Readonly input here…" readonly>
-            </div>
-            <div class="form-group">
-               <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input here..." disabled>
-            </div>
-            <div class="form-group">
-               <select class="form-control" id="exampleFormControlSelect1">
-                  <option>Example select</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-               </select>
-            </div>
-            <div class="form-group">
-               <select multiple class="form-control" id="exampleFormControlSelect2">
-                  <option>Example multiple select</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-               </select>
-            </div>
-            <div class="form-group">
-               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
-                  placeholder="Example textarea"></textarea>
-            </div>
-         </div>
-         <div class="col-md-6">
-            <h6 class="section-secondary-title">Sizes :</h6>
-            <div class="form-group">
-               <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
-            </div>
-            <div class="form-group">
-               <input class="form-control" type="text" placeholder="Default input">
-            </div>
-            <div class="form-group">
-               <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
-            </div>
-         </div>
-      </div> <!-- end of inputs -->
+						<a href="#">
+							<span class="fab fa-twitter"></span>
+						</a>
 
-      <!-- devider -->
-      <div class="py-5"></div>
+						<a href="#">
+							<span class="fab fa-pinterest-p"></span>
+						</a>
 
-      <!-- Dropdowns -->
-      <h3 class="components-section-title font-weight-normal">Dropdowns</h3>
-      <hr>
-      <div class="dropdown d-inline-block">
-         <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown button
-         </button>
-         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-         </div>
-      </div>
-      <div class="dropdown d-inline-block">
-         <a class="btn btn-outline-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Dropdown link
-         </a>
-         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-         </div>
-      </div>
-      <div class="btn-group">
-         <button type="button" class="btn btn-outline-secondary">Split</button>
-         <button type="button" class="btn btn-outline-secondary dropdown-toggle dropdown-toggle-split"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="sr-only">Toggle Dropdown</span>
-         </button>
-         <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-         </div>
-      </div>
-      <div class="btn-group">
-         <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Form Dropdown
-         </button>
-         <div class="dropdown-menu form">
-            <form class="px-4 py-3">
-               <div class="form-group">
-                  <input type="email" class="form-control" id="exampleDropdownFormEmail1"
-                     placeholder="email@example.com">
-               </div>
-               <div class="form-group">
-                  <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
-               </div>
-               <div class="form-check mb-3">
-                  <input type="checkbox" class="form-check-input" id="dropdownCheck">
-                  <label class="form-check-label" for="dropdownCheck">
-                     Remember me
-                  </label>
-               </div>
-               <button type="submit" class="btn btn-primary btn-block">Sign in</button>
-            </form>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#"><small>New around here? Sign up</small></a>
-            <a class="dropdown-item" href="#"><small>Forgot password?</small></a>
-         </div>
-      </div>
-      <h6 class="section-secondary-title mt-5">Directions :</h6>
-      <div class="btn-group dropup">
-         <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropup
-         </button>
-         <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-         </div>
-      </div>
-      <div class="btn-group dropright">
-         <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropup
-         </button>
-         <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-         </div>
-      </div>
-      <div class="btn-group">
-         <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-         </button>
-         <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-         </div>
-      </div>
-      <div class="btn-group dropleft">
-         <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            Dropdown
-         </button>
-         <div class="dropdown-menu">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" href="#">Separated link</a>
-         </div>
-      </div> <!-- end of Dropdowns -->
+						<a href="#">
+							<span class="fab fa-vimeo-v"></span>
+						</a>
 
-      <!-- devider -->
-      <div class="py-5"></div>
+						<a href="#">
+							<span class="fab fa-youtube"></span>
+						</a>
+					</div>
+				</div>
+			</div>
 
-      <!-- navbars -->
-      <h3 class="components-section-title font-weight-normal mt-5">Navigations</h3>
-      <hr>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-primary rounded shadow mb-3">
-         <div class="container">
-            <a class="navbar-brand" href="#">Primary Color</a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="#about">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#service">Our Service</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#team">Our Team</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#book-table" class="ml-4 mt-1 btn btn-light btn-sm">navbar button</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-secondary rounded shadow mb-3">
-         <div class="container">
-            <a class="navbar-brand" href="#">Secondary Color</a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="#about">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#service">Our Service</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#team">Our Team</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#book-table" class="ml-4 mt-1 btn btn-light btn-sm">navbar button</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-success rounded shadow mb-3">
-         <div class="container">
-            <a class="navbar-brand" href="#">Success Color</a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="#about">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#service">Our Service</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#team">Our Team</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#book-table" class="ml-4 mt-1 btn btn-light btn-sm">navbar button</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-info rounded shadow mb-3">
-         <div class="container">
-            <a class="navbar-brand" href="#">Info Color</a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="#about">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#service">Our Service</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#team">Our Team</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#book-table" class="ml-4 mt-1 btn btn-light btn-sm">navbar button</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-warning rounded shadow mb-3">
-         <div class="container">
-            <a class="navbar-brand" href="#">Warning Color</a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="#about">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#service">Our Service</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#team">Our Team</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#book-table" class="ml-4 mt-1 btn btn-light btn-sm">navbar button</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-danger rounded shadow mb-3">
-         <div class="container">
-            <a class="navbar-brand" href="#">Danger Color</a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="#about">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#service">Our Service</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#team">Our Team</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#book-table" class="ml-4 mt-1 btn btn-light btn-sm">navbar button</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark rounded shadow mb-3">
-         <div class="container">
-            <a class="navbar-brand" href="#">Dark Color</a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="#about">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#service">Our Service</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#team">Our Team</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#book-table" class="ml-4 mt-1 btn btn-light btn-sm">navbar button</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <nav class="navbar navbar-expand-sm navbar-light bg-light rounded shadow mb-3">
-         <div class="container">
-            <a class="navbar-brand" href="#">Dark Color</a>
-            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-               data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-               aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav ml-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="#about">About Us</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#service">Our Service</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#team">Our Team</a>
-                  </li>
-                  <li class="nav-item">
-                     <a href="#book-table" class="ml-4 mt-1 btn btn-dark btn-sm">navbar button</a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </nav>
-      <!-- End of navbars -->
+			<!-- Header Mobile -->
+			
 
-      <!-- devider -->
-      <div class="py-5"></div>
+			<!-- Menu Mobile -->
+			
+		
+	</header>
 
-      <!-- progress bars -->
-      <div class="row justify-content-between">
-         <div class="col-md-5">
-            <h3 class="components-section-title font-weight-normal mt-5">Progress Bars :</h3>
-            <hr>
-            <small>Default: </small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0"
-                  aria-valuemax="100"><span>90%</span></div>
-            </div>
-            <small>Success:</small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
-            </div>
-            <small>Danger:</small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar bg-danger" role="progressbar" style="width: 90%" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
-            </div>
-            <small>Warning:</small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar bg-warning" role="progressbar" style="width: 90%" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
-            </div>
-            <small>Info:</small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
-            </div>
-            <small>Dark:</small>
-            <div class="progress mt-2 mb-3">
-               <div class="progress-bar bg-dark" role="progressbar" style="width: 90%" aria-valuenow="25"
-                  aria-valuemin="0" aria-valuemax="100"><span>90%</span></div>
-            </div>
-         </div>
-         <div class="col-md-6">
-            <h3 class="components-section-title font-weight-normal mt-5">Paginations :</h3>
-            <hr>
-            <nav aria-label="Page navigation example">
-               <ul class="pagination pagination-sm">
-                  <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-double-left"></i></a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item active"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-double-right"></i></a></li>
-               </ul>
-            </nav>
-            <nav aria-label="Page navigation example">
-               <ul class="pagination">
-                  <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-double-left"></i></a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item active"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-double-right"></i></a></li>
-               </ul>
-            </nav>
-            <nav aria-label="Page navigation example">
-               <ul class="pagination pagination-lg">
-                  <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-double-left"></i></a></li>
-                  <li class="page-item"><a class="page-link" href="#">1</a></li>
-                  <li class="page-item"><a class="page-link" href="#">2</a></li>
-                  <li class="page-item active"><a class="page-link" href="#">3</a></li>
-                  <li class="page-item"><a class="page-link" href="#">4</a></li>
-                  <li class="page-item"><a class="page-link" href="#">5</a></li>
-                  <li class="page-item"><a class="page-link" href="#"><i class="ti-angle-double-right"></i></a></li>
-               </ul>
-            </nav>
+	<!-- Breadcrumb -->
+	<div class="container">
+		<div class="headline bg0 flex-wr-sb-c p-rl-20 p-tb-8">
+			<div class="f2-s-1 p-r-30 m-tb-6">
+				<a href="index.html" class="breadcrumb-item f1-s-3 cl9">
+					Home
+				</a>
 
-            <!-- Badges -->
-            <h3 class="components-section-title font-weight-normal mt-5">Badges :</h3>
-            <hr>
-            <span class="badge badge-primary">Primary</span>
-            <span class="badge badge-secondary">Secondary</span>
-            <span class="badge badge-success">Success</span>
-            <span class="badge badge-danger">Danger</span>
-            <span class="badge badge-warning">Warning</span>
-            <span class="badge badge-info">Info</span>
-            <span class="badge badge-light">Light</span>
-            <span class="badge badge-dark">Dark</span>
-            <h6 class="section-secondary-title mt-4 mb-2">Badge Pills :</h6>
-            <span class="badge badge-pill badge-primary">Primary</span>
-            <span class="badge badge-pill badge-secondary">Secondary</span>
-            <span class="badge badge-pill badge-success">Success</span>
-            <span class="badge badge-pill badge-danger">Danger</span>
-            <span class="badge badge-pill badge-warning">Warning</span>
-            <span class="badge badge-pill badge-info">Info</span>
-            <span class="badge badge-pill badge-light">Light</span>
-            <span class="badge badge-pill badge-dark">Dark</span>
-         </div>
-      </div> <!-- End of Progress bars -->
+				<a href="blog-list-01.html" class="breadcrumb-item f1-s-3 cl9">
+					Blog
+				</a>
 
-      <!-- devider -->
-      <div class="py-5"></div>
+				<span class="breadcrumb-item f1-s-3 cl9">
+					Các kiểu dữ liệu cơ bản trong Java
+				</span>
+			</div>
 
-      <!-- Alerts -->
-      <h3 class="components-section-title font-weight-normal mt-5">Alerts :</h3>
-      <hr>
-      <div class="alert alert-primary alert-dismissible fade show" role="alert">
-         A simple primary alert—check it out!
-         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-         </button>
-      </div>
-      <div class="alert alert-secondary alert-dismissible fade show" role="alert">
-         A simple secondary alert—check it out!
-         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-         </button>
-      </div>
-      <div class="alert alert-success alert-dismissible fade show" role="alert">
-         A simple success alert—check it out!
-         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-         </button>
-      </div>
-      <div class="alert alert-danger alert-dismissible fade show" role="alert">
-         A simple danger alert—check it out!
-         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-         </button>
-      </div>
-      <div class="alert alert-warning alert-dismissible fade show" role="alert">
-         A simple warning alert—check it out!
-         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-         </button>
-      </div>
-      <div class="alert alert-info alert-dismissible fade show" role="alert">
-         A simple info alert—check it out!
-         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-         </button>
-      </div>
-      <div class="alert alert-dark alert-dismissible fade show" role="alert">
-         A simple dark alert—check it out!
-         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-         </button>
-      </div>
-      <!-- end of alerts -->
+			<div class="pos-relative size-a-2 bo-1-rad-22 of-hidden bocl11 m-tb-6">
+				<input class="f1-s-1 cl6 plh9 s-full p-l-25 p-r-45" type="text" name="search" placeholder="Search">
+				<button class="flex-c-c size-a-1 ab-t-r fs-20 cl2 hov-cl10 trans-03">
+					<i class="zmdi zmdi-search"></i>
+				</button>
+			</div>
+		</div>
+	</div>
 
-      <!-- devider -->
-      <div class="py-5"></div>
+	<!-- Content -->
+	<section class="bg0 p-b-140 p-t-10">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-md-10 col-lg-8 p-b-30">
+					<div class="p-r-10 p-r-0-sr991">
+						<!-- Blog Detail -->
+						<div class="p-b-70">
+                            <!-- Dynamic content will go here -->
+                            <div id="post-content">
+                                <!-- This section will be populated by JavaScript -->
+                            </div>
 
-      <!-- tables -->
-      <h3 class="components-section-title">Tables</h3>
-      <hr>
-      <table class="table">
-         <thead>
-            <tr>
-               <th scope="col">#</th>
-               <th scope="col">First</th>
-               <th scope="col">Last</th>
-               <th scope="col">Handle</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <th scope="row">1</th>
-               <td>Mark</td>
-               <td>Otto</td>
-               <td>@mdo</td>
-            </tr>
-            <tr>
-               <th scope="row">2</th>
-               <td>Jacob</td>
-               <td>Thornton</td>
-               <td>@fat</td>
-            </tr>
-            <tr>
-               <th scope="row">3</th>
-               <td>Larry</td>
-               <td>the Bird</td>
-               <td>@twitter</td>
-            </tr>
-         </tbody>
-      </table>
+                            <a href="blog-list-01.html" class="back-btn">
+                                Quay lại danh sách bài viết
+                            </a>
+                        </div>
 
-      <h6 class="section-secondary-title mt-5">Striped rows :</h6>
-      <table class="table table-striped">
-         <thead>
-            <tr>
-               <th scope="col">#</th>
-               <th scope="col">First</th>
-               <th scope="col">Last</th>
-               <th scope="col">Handle</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <th scope="row">1</th>
-               <td>Mark</td>
-               <td>Otto</td>
-               <td>@mdo</td>
-            </tr>
-            <tr>
-               <th scope="row">2</th>
-               <td>Jacob</td>
-               <td>Thornton</td>
-               <td>@fat</td>
-            </tr>
-            <tr>
-               <th scope="row">3</th>
-               <td>Larry</td>
-               <td>the Bird</td>
-               <td>@twitter</td>
-            </tr>
-         </tbody>
-      </table>
 
-      <h6 class="section-secondary-title mt-5">Bordred :</h6>
-      <table class="table table-bordered">
-         <thead>
-            <tr>
-               <th scope="col">#</th>
-               <th scope="col">First</th>
-               <th scope="col">Last</th>
-               <th scope="col">Handle</th>
-            </tr>
-         </thead>
-         <tbody>
-            <tr>
-               <th scope="row">1</th>
-               <td>Mark</td>
-               <td>Otto</td>
-               <td>@mdo</td>
-            </tr>
-            <tr>
-               <th scope="row">2</th>
-               <td>Jacob</td>
-               <td>Thornton</td>
-               <td>@fat</td>
-            </tr>
-            <tr>
-               <th scope="row">3</th>
-               <td colspan="2">Larry the Bird</td>
-               <td>@twitter</td>
-            </tr>
-         </tbody>
-      </table>
-      <!-- end of tables -->
+						<!-- Leave a comment -->
+						<div>
+							<h4 class="f1-l-4 cl3 p-b-12">
+								Để lại bình luận
+							</h4>
 
-      <!-- devider -->
-      <div class="py-5"></div>
+							<p class="f1-s-13 cl8 p-b-40">
+								Email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu *
+							</p>
 
-      <!-- typography -->
-      <h3 class="components-section-title">Typography</h3>
-      <hr>
-      <table class="table table-borderless v-align-center">
-         <tbody>
-            <tr>
-               <td>
-                  <p><code class="highlighter-rouge">&lt;h1&gt;&lt;/h1&gt; || .h1</code></p>
-               </td>
-               <td class="w-75"><span class="h1">h1. Bootstrap heading</span></td>
-            </tr>
-            <tr>
-               <td>
-                  <p><code class="highlighter-rouge">&lt;h2&gt;&lt;/h2&gt; || .h2</code></p>
-               </td>
-               <td><span class="h2">h2. Bootstrap heading</span></td>
-            </tr>
-            <tr>
-               <td>
-                  <p><code class="highlighter-rouge">&lt;h3&gt;&lt;/h3&gt; || .h3</code></p>
-               </td>
-               <td><span class="h3">h3. Bootstrap heading</span></td>
-            </tr>
-            <tr>
-               <td>
-                  <p><code class="highlighter-rouge">&lt;h4&gt;&lt;/h4&gt; || .h4</code></p>
-               </td>
-               <td><span class="h4">h4. Bootstrap heading</span></td>
-            </tr>
-            <tr>
-               <td>
-                  <p><code class="highlighter-rouge">&lt;h5&gt;&lt;/h5&gt; || .h5</code></p>
-               </td>
-               <td><span class="h5">h5. Bootstrap heading</span></td>
-            </tr>
-            <tr>
-               <td>
-                  <p><code class="highlighter-rouge">&lt;h6&gt;&lt;/h6&gt; || .h6</code></p>
-               </td>
-               <td><span class="h6">h6. Bootstrap heading</span></td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="font-weight-bold text-muted">Paragraph :</p>
-               </td>
-               <td>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat explicabo ab sed voluptas odit hic
-                     obcaecati qui omnis.</p>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="font-weight-bold text-muted">BlockQuote :</p>
-               </td>
-               <td>
-                  <blockquote class="blockquote">
-                     <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a
-                        ante.</p>
-                     <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite>
-                     </footer>
-                  </blockquote>
-               </td>
-            </tr>
+							<form>
+								<textarea class="bo-1-rad-3 bocl13 size-a-15 f1-s-13 cl5 plh6 p-rl-18 p-tb-14 m-b-20"
+									name="msg" placeholder="Bình luận..."></textarea>
 
-            <tr>
-               <td>
-                  <p class="font-weight-bold text-muted">Ordred List :</p>
-               </td>
-               <td>
-                  <ol>
-                     <li>Integer molestie lorem at massa</li>
-                     <li>Facilisis in pretium nisl aliquet</li>
-                     <li>Nulla volutpat aliquam velit
-                        <ul>
-                           <li>Phasellus iaculis neque</li>
-                           <li>Vestibulum laoreet porttitor sem</li>
-                           <li>Ac tristique libero volutpat at</li>
-                        </ul>
-                     </li>
-                     <li>Faucibus porta lacus fringilla vel</li>
-                     <li>Eget porttitor lorem</li>
-                  </ol>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="font-weight-bold text-muted">Unordred List :</p>
-               </td>
-               <td>
-                  <ul>
-                     <li>Integer molestie lorem at massa</li>
-                     <li>Facilisis in pretium nisl aliquet</li>
-                     <li>Nulla volutpat aliquam velit
-                        <ul>
-                           <li>Phasellus iaculis neque</li>
-                           <li>Vestibulum laoreet porttitor sem</li>
-                           <li>Ac tristique libero volutpat at</li>
-                        </ul>
-                     </li>
-                     <li>Faucibus porta lacus fringilla vel</li>
-                     <li>Eget porttitor lorem</li>
-                  </ul>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="font-weight-bold text-muted">Unstyled List :</p>
-               </td>
-               <td>
-                  <ul class="list-unstyled">
-                     <li>Integer molestie lorem at massa</li>
-                     <li>Facilisis in pretium nisl aliquet</li>
-                     <li>Nulla volutpat aliquam velit
-                        <ul>
-                           <li>Phasellus iaculis neque</li>
-                           <li>Vestibulum laoreet porttitor sem</li>
-                           <li>Ac tristique libero volutpat at</li>
-                        </ul>
-                     </li>
-                     <li>Faucibus porta lacus fringilla vel</li>
-                     <li>Eget porttitor lorem</li>
-                  </ul>
-               </td>
-            </tr>
-            <tr>
-               <td class="font-weight-bold text-muted">Description lists : </td>
-               <td>
-                  <dl class="row">
-                     <dt class="col-sm-3">Euismod</dt>
-                     <dd class="col-sm-9">
-                        <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio.</p>
-                     </dd>
+								<input class="bo-1-rad-3 bocl13 size-a-16 f1-s-13 cl5 plh6 p-rl-18 m-b-20" type="text"
+									name="name" placeholder="Tên*">
 
-                     <dt class="col-sm-3">Malesuada porta</dt>
-                     <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+								<input class="bo-1-rad-3 bocl13 size-a-16 f1-s-13 cl5 plh6 p-rl-18 m-b-20" type="text"
+									name="email" placeholder="Email*">
 
-                     <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-                     <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
-                        fermentum massa justo sit amet risus.</dd>
+								<input class="bo-1-rad-3 bocl13 size-a-16 f1-s-13 cl5 plh6 p-rl-18 m-b-20" type="text"
+									name="website" placeholder="Website">
 
-                     <dt class="col-sm-3">Nesting</dt>
-                     <dd class="col-sm-9">
-                        <dl class="row">
-                           <dt class="col-sm-4">Nested definition list</dt>
-                           <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
-                        </dl>
-                     </dd>
-                  </dl>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="font-weight-bold text-muted">Muted Text :</p>
-               </td>
-               <td>
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nulla,
-                     reprehenderit! Beatae, dolor harum fugiat.</p>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="font-weight-bold text-muted">Primary Text :</p>
-               </td>
-               <td>
-                  <p class="text-primary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nulla,
-                     reprehenderit! Beatae, dolor harum fugiat.</p>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="font-weight-bold text-muted">Danger Text :</p>
-               </td>
-               <td>
-                  <p class="text-danger">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nulla,
-                     reprehenderit! Beatae, dolor harum fugiat.</p>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="font-weight-bold text-muted">Warning Text :</p>
-               </td>
-               <td>
-                  <p class="text-warning">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nulla,
-                     reprehenderit! Beatae, dolor harum fugiat.</p>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="font-weight-bold text-muted">Success Text :</p>
-               </td>
-               <td>
-                  <p class="text-success">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nulla,
-                     reprehenderit! Beatae, dolor harum fugiat.</p>
-               </td>
-            </tr>
-            <tr>
-               <td>
-                  <p class="font-weight-bold text-muted">Info Text :</p>
-               </td>
-               <td>
-                  <p class="text-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In, nulla,
-                     reprehenderit! Beatae, dolor harum fugiat.</p>
-               </td>
-            </tr>
-         </tbody>
-      </table>
-   </div>
-   <!-- end of typography -->
+								<button class="size-a-17 bg2 borad-3 f1-s-12 cl0 hov-btn1 trans-03 p-rl-15 m-t-10">
+									Đăng bình luận
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
 
-   <!-- footer -->
-   <div class="container mt-5">
-      <footer class="footer">
-         <p class="mb-0">Copyright
-            <script>document.write(new Date().getFullYear())</script> &copy; <a
-               href="http://www.devcrud.com">DevCRUD</a> Distribution <a href="https://themewagon.com">ThemeWagon</a>
-         </p>
-         <div class="social-links text-right m-auto ml-sm-auto">
-            <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
-            <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
-            <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
-            <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
-            <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
-            <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
-         </div>
-      </footer>
-   </div> <!-- end of page footer -->
+				<!-- Sidebar -->
+				<div class="col-md-10 col-lg-4 p-b-30">
+					<div class="p-l-10 p-rl-0-sr991 p-t-70">
+						<!-- Popular Posts -->
+						<div class="p-b-30">
+							<div class="how2 how2-cl4 flex-s-c">
+								<h3 class="f1-m-2 cl3 tab01-title">
+									Bài viết nổi bật
+								</h3>
+							</div>
 
-   <!-- core  -->
-   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-   <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
+							<ul class="p-t-35">
+								<li class="flex-wr-sb-s p-b-30">
+									<a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
+										<img src="images/popular-post-04.jpg" alt="IMG">
+									</a>
+
+									<div class="size-w-11">
+										<h6 class="p-b-4">
+											<a href="blog-detail-02.html" class="f1-s-5 cl3 hov-cl10 trans-03">
+												Hiểu nhanh OOP trong 10 phút
+											</a>
+										</h6>
+
+										<span class="cl8 txt-center p-b-24">
+											<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+												Nhạc
+											</a>
+
+											<span class="f1-s-3 m-rl-3">
+												-
+											</span>
+
+											<span class="f1-s-3">
+												18 Tháng 2
+											</span>
+										</span>
+									</div>
+								</li>
+
+								<li class="flex-wr-sb-s p-b-30">
+									<a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
+										<img src="images/popular-post-05.jpg" alt="IMG">
+									</a>
+
+									<div class="size-w-11">
+										<h6 class="p-b-4">
+											<a href="blog-detail-02.html" class="f1-s-5 cl3 hov-cl10 trans-03">
+												Phân biệt == và === bằng ví dụ
+											</a>
+										</h6>
+
+
+									</div>
+								</li>
+
+								<li class="flex-wr-sb-s p-b-30">
+									<a href="#" class="size-w-10 wrap-pic-w hov1 trans-03">
+										<img src="images/popular-post-06.jpg" alt="IMG">
+									</a>
+
+									<div class="size-w-11">
+										<h6 class="p-b-4">
+											<a href="blog-detail-02.html" class="f1-s-5 cl3 hov-cl10 trans-03">
+												Stream API: map, filter, reduce
+											</a>
+										</h6>
+
+										<span class="cl8 txt-center p-b-24">
+											<a href="#" class="f1-s-6 cl8 hov-cl10 trans-03">
+												Người nổi tiếng
+											</a>
+
+											<span class="f1-s-3 m-rl-3">
+												-
+											</span>
+
+											<span class="f1-s-3">
+												12 Tháng 2
+											</span>
+										</span>
+									</div>
+								</li>
+							</ul>
+						</div>
+
+						<!-- Tag -->
+						<div>
+							<div class="how2 how2-cl4 flex-s-c m-b-30">
+								<h3 class="f1-m-2 cl3 tab01-title">
+									Thẻ
+								</h3>
+							</div>
+
+							<div class="flex-wr-s-s m-rl--5">
+								<a href="#"
+									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
+									Java
+								</a>
+
+								<a href="#"
+									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
+									JavaScript
+								</a>
+
+								<a href="#"
+									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
+									Lập trình hướng đối tượng
+								</a>
+
+								<a href="#"
+									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
+									Cấu trúc dữ liệu
+								</a>
+
+								<a href="#"
+									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
+									Hàm & Biểu thức
+								</a>
+
+								<a href="#"
+									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
+									Cú pháp cơ bản
+								</a>
+
+								<a href="#"
+									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
+									Xử lý chuỗi
+								</a>
+
+								<a href="#"
+									class="flex-c-c size-h-2 bo-1-rad-20 bocl12 f1-s-1 cl8 hov-btn2 trans-03 p-rl-20 p-tb-5 m-all-5">
+									Lỗi & Ngoại lệ
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+	<!-- Footer -->
+	<footer>
+	<div class="bg2 p-t-40 p-b-25">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-4 p-b-20">
+					
+
+					<div>
+						
+						<p class="f1-s-1 cl11 p-b-16">
+							Mọi thắc mắc, liên hệ: <b>contact@myblog.com</b> hoặc gọi <b>(+84) 912 345 678</b>
+						</p>
+
+						<div class="p-t-15">
+							<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+								<span class="fab fa-facebook-f"></span>
+							</a>
+
+							<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+								<span class="fab fa-twitter"></span>
+							</a>
+							<a href="#" class="fs-18 cl11 hov-cl10 trans-03 m-r-8">
+								<span class="fab fa-youtube"></span>
+							</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<div class="bg11">
+		<div class="container size-h-4 flex-c-c p-tb-15">
+			<span class="f1-s-1 cl0 txt-center">
+				Bản quyền © 
+				<script>document.write(new Date().getFullYear());</script>
+				- Chau. 
+			
+			</span>
+		</div>
+	</div>
+</footer>
+
+
+	<!-- Back to top -->
+	<div class="btn-back-to-top" id="myBtn">
+		<span class="symbol-btn-back-to-top">
+			<span class="fas fa-angle-up"></span>
+		</span>
+	</div>
+
+<script>
+	 function getQueryParams() {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams;
+        }
+	 const posts = {
+            1: {
+                title: "Các kiểu dữ liệu cơ bản trong Java",
+                date: "17 Tháng 10",
+                author: "Chau",
+                content: `<div class="p-b-70">
+							<a href="#" class="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
+								Công nghệ
+							</a>
+
+							<h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">
+								Các kiểu dữ liệu cơ bản trong Java 
+							</h3>
+
+							<div class="flex-wr-s-s p-b-40">
+								<span class="f1-s-3 cl8 m-r-15">
+									<a href="#" class="f1-s-4 cl8 hov-cl10 trans-03">
+										by Chau
+									</a>
+
+									<span class="m-rl-3">-</span>
+
+									<span>
+										17 Tháng 10
+									</span>
+								</span>
+
+								<span class="f1-s-3 cl8 m-r-15">
+									6521 Lượt xem
+								</span>
+
+								<a href="#" class="f1-s-3 cl8 hov-cl10 trans-03 m-r-15">
+									0 Bình luận
+								</a>
+							</div>
+
+							<div class="wrap-pic-max-w p-b-30">
+								<img src="images/blog-list-01.jpg" alt="IMG">
+							</div>
+
+							<p class="f1-s-11 cl6 p-b-25">
+								Trong lập trình Java, việc hiểu rõ các <b>kiểu dữ liệu cơ bản</b> là bước nền tảng quan
+								trọng giúp lập trình viên sử dụng bộ nhớ hiệu quả, tránh lỗi và đảm bảo chương trình
+								chạy ổn định. Java là ngôn ngữ lập trình mạnh kiểu (strongly typed), nghĩa là mọi biến
+								đều phải có kiểu dữ liệu xác định ngay từ khi khai báo. Kiểu dữ liệu quyết định dung
+								lượng bộ nhớ mà biến chiếm, giá trị hợp lệ mà nó có thể chứa, và các phép toán có thể
+								thực hiện.
+							</p>
+
+							<p class="f1-s-11 cl6 p-b-25">
+								Java chia dữ liệu thành hai nhóm lớn: <b>kiểu nguyên thủy (Primitive types)</b> và
+								<b>kiểu tham chiếu (Reference types)</b>. Mỗi nhóm có vai trò khác nhau trong việc lưu
+								trữ và xử lý thông tin.
+							</p>
+
+							<h4 class="f1-m-3 cl2 p-b-16">1. Kiểu nguyên thủy (Primitive Types)</h4>
+							<p class="f1-s-11 cl6 p-b-25">
+								Kiểu nguyên thủy là những kiểu dữ liệu có sẵn trong Java, được lưu trực tiếp trong bộ
+								nhớ Stack, giúp chương trình truy xuất nhanh. Có tổng cộng <b>8 kiểu dữ liệu nguyên
+									thủy</b>:
+							</p>
+
+							<ul class="f1-s-11 cl6 p-b-25" style="margin-left:1rem;">
+								<li><b>byte</b> (8-bit): dùng lưu số nhỏ, thường cho mảng lớn để tiết kiệm bộ nhớ. Phạm
+									vi: -128 đến 127.</li>
+								<li><b>short</b> (16-bit): dùng cho số nguyên vừa phải. Phạm vi: -32,768 đến 32,767.
+								</li>
+								<li><b>int</b> (32-bit): kiểu nguyên mặc định trong Java. Dùng hầu hết các phép toán số
+									học.</li>
+								<li><b>long</b> (64-bit): dùng cho giá trị nguyên rất lớn. Khi khai báo cần hậu tố
+									<code>L</code>, ví dụ <code>long n = 5000000L;</code></li>
+								<li><b>float</b> (32-bit): lưu số thực, độ chính xác đơn. Cần hậu tố <code>F</code> khi
+									khai báo.</li>
+								<li><b>double</b> (64-bit): số thực độ chính xác kép, là kiểu mặc định cho số thực.</li>
+								<li><b>char</b>: lưu một ký tự Unicode đơn (ví dụ <code>'A'</code>, <code>'1'</code>,
+									<code>'\n'</code>).</li>
+								<li><b>boolean</b>: chỉ chứa hai giá trị <code>true</code> hoặc <code>false</code>,
+									thường dùng trong điều kiện rẽ nhánh.</li>
+							</ul>
+
+							<pre class="f1-s-11 cl6 p-b-25"
+								style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;"><code class="language-java">
+// Ví dụ khai báo các kiểu dữ liệu cơ bản
+int age = 21;
+long population = 8000000000L;
+float ratio = 0.75F;
+double pi = 3.14159265359;
+char grade = 'A';
+boolean isPassed = true;
+</code></pre>
+
+							<h4 class="f1-m-3 cl2 p-b-16">2. Kiểu tham chiếu (Reference Types)</h4>
+							<p class="f1-s-11 cl6 p-b-25">
+								Khác với kiểu nguyên thủy, kiểu tham chiếu lưu địa chỉ vùng nhớ của đối tượng (object)
+								trong Heap. Bao gồm: <b>String</b>, <b>Array</b> (mảng), <b>Class</b>, <b>Interface</b>
+								và <b>Wrapper Class</b> (ví dụ: <code>Integer</code>, <code>Double</code>). Khi làm việc
+								với kiểu tham chiếu, ta thao tác trên đối tượng thật sự chứ không phải giá trị trực
+								tiếp.
+							</p>
+
+							<pre class="f1-s-11 cl6 p-b-25"
+								style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;"><code class="language-java">
+// Ví dụ về kiểu tham chiếu
+String name = "Java";
+int[] scores = {85, 90, 95};
+Integer number = 100; // Wrapper class - autoboxing
+int raw = number;     // Unboxing từ Integer sang int
+</code></pre>
+
+							<p class="f1-s-11 cl6 p-b-25">
+								Khi khai báo một biến kiểu tham chiếu, bản thân biến không lưu dữ liệu thực tế mà chỉ
+								trỏ đến đối tượng chứa dữ liệu. Vì thế, nếu hai biến cùng tham chiếu đến một đối tượng
+								thì việc thay đổi một biến sẽ ảnh hưởng đến biến còn lại.
+							</p>
+
+							<h4 class="f1-m-3 cl2 p-b-16">3. Ép kiểu (Casting) trong Java</h4>
+							<p class="f1-s-11 cl6 p-b-25">
+								Ép kiểu cho phép chuyển đổi giữa các kiểu dữ liệu khác nhau. Có hai loại:
+							</p>
+
+							<ul class="f1-s-11 cl6 p-b-25" style="margin-left:1rem;">
+								<li><b>Widening Casting</b> (tự động): khi chuyển từ kiểu nhỏ sang kiểu lớn, ví dụ
+									<code>int</code> → <code>long</code> → <code>float</code> → <code>double</code>.
+								</li>
+								<li><b>Narrowing Casting</b> (thủ công): khi chuyển từ kiểu lớn sang kiểu nhỏ, có thể
+									mất dữ liệu. Cần dùng dấu ngoặc tròn, ví dụ <code>(int) 3.14</code>.</li>
+							</ul>
+
+							<pre class="f1-s-11 cl6 p-b-25"
+								style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;"><code class="language-java">
+// Ví dụ ép kiểu
+double a = 9.78;
+int b = (int) a;   // Narrowing - b = 9
+int x = 10;
+double y = x;      // Widening - tự động
+</code></pre>
+
+							<p class="f1-s-11 cl6 p-b-25">
+								Khi ép kiểu, lập trình viên cần cẩn trọng để không làm mất dữ liệu hoặc gây lỗi tràn số
+								(overflow). Với kiểu <code>char</code> và <code>int</code>, Java cho phép chuyển đổi
+								trực tiếp để xử lý ký tự ASCII, ví dụ <code>(int)'A'</code> cho ra 65.
+							</p>
+
+							<h4 class="f1-m-3 cl2 p-b-16">4. Từ khóa <code>var</code> trong Java 10+</h4>
+							<p class="f1-s-11 cl6 p-b-25">
+								Từ phiên bản Java 10, có thể dùng <code>var</code> để suy luận kiểu dữ liệu cho biến cục
+								bộ. Tuy nhiên, Java vẫn giữ tính tĩnh — nghĩa là kiểu được xác định tại thời điểm biên
+								dịch, không thể thay đổi sau đó.
+							</p>
+
+							<pre class="f1-s-11 cl6 p-b-25"
+								style="white-space:pre; background:#f7f7f7; padding:16px; border-radius:6px;"><code class="language-java">
+var message = "Hello Java";  // Kiểu String
+var number = 42;             // Kiểu int
+</code></pre>
+
+							<h4 class="f1-m-3 cl2 p-b-16">5. Một số lưu ý quan trọng</h4>
+							<ul class="f1-s-11 cl6 p-b-25" style="margin-left:1rem;">
+								<li>So sánh chuỗi dùng <code>equals()</code> thay vì <code>==</code>.</li>
+								<li>Tránh chia cho 0 với kiểu số nguyên; nếu chia 0.0 sẽ ra <code>Infinity</code> với
+									kiểu <code>double</code>.</li>
+								<li>Cẩn thận khi ép kiểu <code>long → int</code> có thể gây tràn dữ liệu.</li>
+								<li>Đối với tiền tệ hoặc số có độ chính xác cao, nên dùng <code>BigDecimal</code>.</li>
+								<li>Kiểu <code>boolean</code> không thể ép trực tiếp sang số như trong C/C++.</li>
+							</ul>
+
+							<h4 class="f1-m-3 cl2 p-b-16">6. Kết luận</h4>
+							<p class="f1-s-11 cl6 p-b-25">
+								Nắm vững các kiểu dữ liệu trong Java là bước đầu tiên để viết chương trình hiệu quả và
+								dễ bảo trì. Khi hiểu cách hoạt động của từng kiểu, lập trình viên có thể lựa chọn đúng
+								loại cho từng trường hợp: tiết kiệm bộ nhớ, tăng hiệu suất và giảm lỗi. Sau khi thành
+								thạo phần này, bạn nên tìm hiểu sâu hơn về <b>kiểu dữ liệu phức tạp</b> như
+								<code>ArrayList</code>, <code>HashMap</code>, hoặc cơ chế <b>Generics</b> trong Java.
+							</p>
+						</div> `
+
+            },
+			2: {
+                title: "Làm quen với JavaScript: cú pháp và biến",
+                date: "18 Tháng 10",
+                author: "Chau",
+                content: `
+                    <p>JavaScript là ngôn ngữ lập trình phổ biến với cú pháp đơn giản và dễ học...</p>
+                    <p>Chúng ta sẽ tìm hiểu về biến, kiểu dữ liệu, và cú pháp cơ bản trong JavaScript...</p>
+                `
+            },
+		};
+			 function loadPostContent() {
+            const params = getQueryParams();
+            const postId = params.get('id');
+            const post = posts[postId];
+
+            if (post) {
+                // Update breadcrumb title
+                document.getElementById('breadcrumb-title').textContent = post.title;
+
+                // Insert post content into the page
+                const postContent = document.getElementById('post-content');
+                postContent.innerHTML = `
+                    <a href="#" class="f1-s-10 cl2 hov-cl10 trans-03 text-uppercase">
+                        Công nghệ
+                    </a>
+                    <h3 class="f1-l-3 cl2 p-b-16 p-t-33 respon2">${post.title}</h3>
+                    <div class="flex-wr-s-s p-b-40">
+                        <span class="f1-s-3 cl8 m-r-15">
+                            by <b>${post.author}</b> • ${post.date}
+                        </span>
+                        <span class="f1-s-3 cl8 m-r-15">6521 Lượt xem</span>
+                        <a href="#" class="f1-s-3 cl8 hov-cl10 trans-03 m-r-15">0 Bình luận</a>
+                    </div>
+                    <div class="wrap-pic-max-w p-b-30">
+                        <img src="images/blog-list-01.jpg" alt="IMG">
+                    </div>
+                    <div class="content">${post.content}</div>
+                `;
+            } else {
+                document.getElementById('post-content').innerHTML = "<p>Bài viết không tồn tại!</p>";
+            }
+        }
+
+        // Load the post content when the page is ready
+        loadPostContent();
+			
+
+
+</script>
+	<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+	<!--===============================================================================================-->
+	<script src="js/main.js"></script>
 
 </body>
 

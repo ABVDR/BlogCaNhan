@@ -6,20 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Blog Layout Demo</title>
     <!-- Font Awesome icons -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
         :root {
             --text: #1a1a1a;
             --muted: #6b7280;
             --border: #e5e7eb;
-            --brand: #16a34a;
-            /* xanh subscribe */
+            --brand: #16a34a; /* xanh subscribe */
             --bg: #ffffff;
         }
 
         * {
-            box-sizing: border-box
+            box-sizing: border-box;
         }
 
         body {
@@ -38,22 +37,22 @@
 
         header h1 {
             font-size: 28px;
-            margin: 0 0 8px
+            margin: 0 0 8px;
         }
 
         header p {
             color: var(--muted);
-            margin: 0 0 24px
+            margin: 0 0 24px;
         }
 
-        /* layout 2 cột */
+        /* Layout 2 cột */
         .grid {
             display: grid;
             grid-template-columns: 1.7fr 1fr;
             gap: 32px;
         }
 
-        /* danh sách bài bên trái: 2 cột */
+        /* Danh sách bài viết bên trái */
         .posts {
             display: grid;
             grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -64,6 +63,7 @@
             display: block;
             text-decoration: none;
             color: inherit;
+            transition: transform 0.3s ease;
         }
 
         .card .thumb {
@@ -91,14 +91,18 @@
         }
 
         .meta b {
-            color: #111
+            color: #111;
         }
 
-        /* sidebar */
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        /* Sidebar */
         .sidebar {
             display: flex;
             flex-direction: column;
-            gap: 28px
+            gap: 28px;
         }
 
         .subscribe {
@@ -110,12 +114,12 @@
 
         .subscribe h3 {
             margin: 0 0 10px;
-            font-size: 26px
+            font-size: 26px;
         }
 
         .subscribe p {
             margin: 0 0 16px;
-            color: #e6f7eb
+            color: #e6f7eb;
         }
 
         .sub-form {
@@ -145,7 +149,7 @@
 
         .sub-form button svg {
             width: 20px;
-            height: 20px
+            height: 20px;
         }
 
         .widget {
@@ -165,7 +169,7 @@
         .popular {
             list-style: none;
             margin: 0;
-            padding: 0
+            padding: 0;
         }
 
         .popular li {
@@ -201,11 +205,11 @@
 
         .topbar .divider {
             margin: 0 12px;
-            color: #6b7280
+            color: #6b7280;
         }
 
         .topbar__links a:hover {
-            color: #ffffff
+            color: #ffffff;
         }
 
         .topbar__social a {
@@ -221,50 +225,32 @@
         }
 
         .topbar__social a:hover {
-            color: #ffffff
+            color: #ffffff;
         }
 
-        @media (max-width:640px) {
+        @media (max-width: 1024px) {
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            .posts {
+                grid-template-columns: 1fr;
+            }
+
+            .sidebar {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 640px) {
             .topbar {
-                height: auto
+                height: auto;
             }
 
             .topbar__inner {
                 flex-direction: column;
                 gap: 8px;
-                padding: 8px 12px
-            }
-        }
-
-        .badge {
-            width: 28px;
-            height: 28px;
-            border-radius: 6px;
-            border: 1px solid var(--border);
-            display: grid;
-            place-items: center;
-            font-weight: 700;
-            color: #374151;
-            background: #fff;
-            flex: 0 0 28px;
-        }
-
-        .pop-text b {
-            display: block
-        }
-
-        .pop-text small {
-            color: var(--muted)
-        }
-
-        /* responsive */
-        @media (max-width:1024px) {
-            .grid {
-                grid-template-columns: 1fr
-            }
-
-            .posts {
-                grid-template-columns: 1fr
+                padding: 8px 12px;
             }
         }
     </style>
@@ -272,23 +258,23 @@
 
 <body>
     <!-- TOP BAR -->
-<div class="topbar">
-  <div class="topbar__inner">
-    <nav class="topbar__links">
-      <a href="about.html">About</a>
-      <span class="divider">|</span>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <div class="topbar">
+        <div class="topbar__inner">
+            <nav class="topbar__links">
+                <a href="index.html">About</a>
+                <span class="divider">|</span>
+                <a href="cv.html">Contact</a>
+            </nav>
 
-    <div class="topbar__social">
-      <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-      <a aria-label="Twitter/X" href="#"><i class="fab fa-twitter"></i></a>
-      <a aria-label="Pinterest" href="#"><i class="fab fa-pinterest-p"></i></a>
-      <a aria-label="Vimeo" href="#"><i class="fab fa-vimeo-v"></i></a>
-      <a aria-label="YouTube" href="#"><i class="fab fa-youtube"></i></a>
+            <div class="topbar__social">
+                <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
+                <a aria-label="Twitter/X" href="#"><i class="fab fa-twitter"></i></a>
+                <a aria-label="Pinterest" href="#"><i class="fab fa-pinterest-p"></i></a>
+                <a aria-label="Vimeo" href="#"><i class="fab fa-vimeo-v"></i></a>
+                <a aria-label="YouTube" href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
     </div>
-  </div>
-</div>
 
     <div class="container">
         <header>
@@ -297,153 +283,116 @@
         </header>
 
         <div class="grid">
-  <!-- Cột trái: bài viết -->
-  <section class="posts">
+            <!-- Cột trái: bài viết -->
+            <section class="posts">
 
-    <!-- Card 1 -->
-    <a href="post-java-datatypes.html" class="card">
-      <img class="thumb"
-        src="https://images.unsplash.com/photo-1581092580325-4c29aa1d6515?q=80&w=1200&auto=format&fit=crop"
-        alt="Java data types">
-      <h2 class="title">Các kiểu dữ liệu cơ bản trong Java</h2>
-      <div class="meta">by <b>MA</b> • Oct 10</div>
-    </a>
+                <!-- Card 1 -->
+                <a href="baiviet.html?id=1" class="card">
+                    <img class="thumb" src="images/java-programming-language.jpg" alt="Java data types">
+                    <h2 class="title">Các kiểu dữ liệu cơ bản trong Java</h2>
+                    <div class="meta">by <b>Chau</b> • Oct 1</div>
+                </a>
 
-    <!-- Card 2 -->
-    <a href="post-js-basics.html" class="card">
-      <img class="thumb"
-        src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop"
-        alt="JavaScript basics">
-      <h2 class="title">Làm quen với JavaScript: cú pháp và biến</h2>
-      <div class="meta">by <b>MA</b> • Oct 11</div>
-    </a>
+                <!-- Card 2 -->
+                <a href="baiviet.html?id=2" class="card">
+                    <img class="thumb" src="images/jvs.jpg" alt="JavaScript basics">
+                    <h2 class="title">Các kiểu dữ liệu trong JavaScript</h2>
+                    <div class="meta">by <b>Chau</b> • Oct 3</div>
+                </a>
+                <a href="baiviet.html?id=3" class="card">
+                    <img class="thumb" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="JavaScript basics">
+                    <h2 class="title">Lập trình hướng đối tượng trong Java</h2>
+                    <div class="meta">by <b>Chau</b> • Oct 3</div>
+                </a>
+                <a href="baiviet.html?id=4" class="card">
+                    <img class="thumb" src="images/What-is-Core-Java.png" alt="JavaScript basics">
+                    <h2 class="title">Cấu trúc điều khiển trong Java</h2>
+                    <div class="meta">by <b>Chau</b> • Oct 3</div>
+                </a>
+                <a href="baiviet.html?id=5" class="card">
+                    <img class="thumb" src="images/jvss.jpg" alt="JavaScript basics">
+                    <h2 class="title">Cách sử dụng mảng trong JavaScript</h2>
+                    <div class="meta">by <b>Chau</b> • Oct 23</div>
+                </a>
+                <a href="baiviet.html?id=6" class="card">
+                    <img class="thumb" src="images/OIP.jpg" alt="JavaScript basics">
+                    <h2 class="title">Cách sử dụng hàm trong JavaScript</h2>
+                    <div class="meta">by <b>Chau</b> • Oct 26</div>
+                </a>
+                <a href="baiviet.html?id=7" class="card">
+                    <img class="thumb" src="images/OIP (1).jpg" alt="JavaScript basics">
+                    <h2 class="title">Cấu trúc điều khiển trong Java</h2>
+                    <div class="meta">by <b>Chau</b> • Oct 25</div>
+                </a>
+                <a href="baiviet.html?id=8" class="card">
+                    <img class="thumb" src="images/Java-Objects-classes.jpg" alt="JavaScript basics">
+                    <h2 class="title">Các lớp và đối tượng trong Java</h2>
+                    <div class="meta">by <b>Chau</b> • Oct 26</div>
+                </a>
+                <a href="baiviet.html?id=9" class="card">
+                    <img class="thumb" src="images/OIP (2).jpg" alt="JavaScript basics">
+                    <h2 class="title">Cách làm việc với sự kiện trong JavaScript</h2>
+                    <div class="meta">by <b>Chau</b> • Oct 27</div>
+                </a>
 
-    <!-- Card 3 -->
-    <a href="post-java-oop.html" class="card">
-      <img class="thumb"
-        src="https://images.unsplash.com/photo-1531497865144-0464ef8fb9a9?q=80&w=1200&auto=format&fit=crop"
-        alt="Java OOP">
-      <h2 class="title">Lập trình hướng đối tượng trong Java</h2>
-      <div class="meta">by <b>MA</b> • Oct 12</div>
-    </a>
+                <!-- Các card bài viết khác -->
 
-    <!-- Card 4 -->
-    <a href="post-js-dom.html" class="card">
-      <img class="thumb"
-        src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop"
-        alt="JavaScript DOM">
-      <h2 class="title">Tìm hiểu DOM và thao tác giao diện bằng JavaScript</h2>
-      <div class="meta">by <b>MA</b> • Oct 13</div>
-    </a>
+            </section>
 
-    <!-- Card 5 -->
-    <a href="post-java-collections.html" class="card">
-      <img class="thumb"
-        src="https://images.unsplash.com/photo-1629904853893-c2c8981a1c80?q=80&w=1200&auto=format&fit=crop"
-        alt="Java Collections">
-      <h2 class="title">Giới thiệu Java Collections Framework</h2>
-      <div class="meta">by <b>MA</b> • Oct 14</div>
-    </a>
+            <!-- Cột phải: sidebar -->
+            <aside class="sidebar">
+                <!-- Subscribe -->
+                <section class="subscribe">
+                    <h3>Subscribe</h3>
+                    <p>Nhận nội dung mới 1–2 lần mỗi tháng.</p>
+                    <form class="sub-form" onsubmit="event.preventDefault(); alert('Đăng ký thành công!');">
+                        <input type="email" placeholder="Email">
+                        <button aria-label="Submit">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14M13 5l7 7-7 7" />
+                            </svg>
+                        </button>
+                    </form>
+                </section>
 
-    <!-- Card 6 -->
-    <a href="post-js-event.html" class="card">
-      <img class="thumb"
-        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop"
-        alt="JS events">
-      <h2 class="title">Xử lý sự kiện trong JavaScript: click, input, change...</h2>
-      <div class="meta">by <b>MA</b> • Oct 15</div>
-    </a>
-
-    <!-- Card 7 -->
-    <a href="post-java-exception.html" class="card">
-      <img class="thumb"
-        src="https://images.unsplash.com/photo-1587620931282-91d1e0b6e29d?q=80&w=1200&auto=format&fit=crop"
-        alt="Java exception">
-      <h2 class="title">Exception Handling trong Java: try, catch, finally</h2>
-      <div class="meta">by <b>MA</b> • Oct 16</div>
-    </a>
-
-    <!-- Card 8 -->
-    <a href="post-js-async.html" class="card">
-      <img class="thumb"
-        src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=1200&auto=format&fit=crop"
-        alt="Async JS">
-      <h2 class="title">Hiểu về bất đồng bộ trong JavaScript: callback, promise, async/await</h2>
-      <div class="meta">by <b>MA</b> • Oct 17</div>
-    </a>
-
-    <!-- Card 9 -->
-    <a href="post-java-file.html" class="card">
-      <img class="thumb"
-        src="https://images.unsplash.com/photo-1591696205602-2f950c417cb9?q=80&w=1200&auto=format&fit=crop"
-        alt="Java file IO">
-      <h2 class="title">Đọc và ghi file trong Java với FileReader và BufferedWriter</h2>
-      <div class="meta">by <b>MA</b> • Oct 18</div>
-    </a>
-
-    <!-- Card 10 -->
-    <a href="post-js-fetch.html" class="card">
-      <img class="thumb"
-        src="https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1200&auto=format&fit=crop"
-        alt="JS fetch API">
-      <h2 class="title">Kết nối API bằng Fetch trong JavaScript</h2>
-      <div class="meta">by <b>MA</b> • Oct 19</div>
-    </a>
-
-  </section>
-
-  <!-- Cột phải: sidebar -->
-  <aside class="sidebar">
-    <!-- Subscribe -->
-    <section class="subscribe">
-      <h3>Subscribe</h3>
-      <p>Nhận nội dung mới 1–2 lần mỗi tháng.</p>
-      <form class="sub-form" onsubmit="event.preventDefault(); alert('Đăng ký thành công!');">
-        <input type="email" placeholder="Email">
-        <button aria-label="Submit">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M5 12h14M13 5l7 7-7 7" />
-          </svg>
-        </button>
-      </form>
-    </section>
-
-    <!-- Most Popular -->
-    <section class="widget">
-      <div class="head">Most Popular</div>
-      <ol class="popular">
-        <li>
-          <span class="badge">1</span>
-          <div class="pop-text">
-            <b>Hướng dẫn OOP trong Java cơ bản cho người mới</b>
-            <small>7 phút đọc</small>
-          </div>
-        </li>
-        <li>
-          <span class="badge">2</span>
-          <div class="pop-text">
-            <b>10 mẹo tối ưu code JavaScript</b>
-            <small>6 phút đọc</small>
-          </div>
-        </li>
-        <li>
-          <span class="badge">3</span>
-          <div class="pop-text">
-            <b>Xử lý lỗi trong Java hiệu quả với Exception</b>
-            <small>5 phút đọc</small>
-          </div>
-        </li>
-        <li>
-          <span class="badge">4</span>
-          <div class="pop-text">
-            <b>Promise và Async/Await trong JavaScript</b>
-            <small>8 phút đọc</small>
-          </div>
-        </li>
-      </ol>
-    </section>
-  </aside>
-</div>
+                <!-- Most Popular -->
+                <section class="widget">
+                    <div class="head">Most Popular</div>
+                    <ol class="popular">
+                        <li>
+                            <span class="badge">1</span>
+                            <div class="pop-text">
+                                <b>Các lớp và đối tượng trong Java</b>
+                                <small>6 phút đọc</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="badge">2</span>
+                            <div class="pop-text">
+                                <b>Cấu trúc điều khiển trong Java</b>
+                                <small>3 phút đọc</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="badge">3</span>
+                            <div class="pop-text">
+                                <b>Cách sử dụng hàm trong JavaScript</b>
+                                <small>8 phút đọc</small>
+                            </div>
+                        </li>
+                        <li>
+                            <span class="badge">4</span>
+                            <div class="pop-text">
+                                <b>Cách sử dụng hàm trong JavaScript</b>
+                                <small>5 phút đọc</small>
+                            </div>
+                        </li>
+                        <!-- Các bài viết phổ biến khác -->
+                    </ol>
+                </section>
+            </aside>
+        </div>
+    </div>
 
 </body>
 
