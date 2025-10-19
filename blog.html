@@ -7,6 +7,7 @@
     <title>Blog Layout Demo</title>
     <!-- Font Awesome icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
 
     <style>
         :root {
@@ -253,34 +254,167 @@
                 padding: 8px 12px;
             }
         }
+        /* Top Bar Styling */
+.topbar {
+    background: #111;
+    color: #e5e7eb;
+    width: 100%;
+    height: 56px;
+}
+
+.topbar__inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.topbar__links a {
+    color: #e5e7eb;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.topbar .divider {
+    margin: 0 12px;
+    color: #6b7280;
+}
+
+.topbar__links a:hover {
+    color: #ffffff;
+}
+
+.topbar__social a {
+    color: #e5e7eb;
+    text-decoration: none;
+    margin-left: 16px;
+    font-size: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 28px;
+    height: 28px;
+}
+
+.topbar__social a:hover {
+    color: #ffffff;
+}
+
+@media (max-width: 640px) {
+    .topbar {
+        height: auto;
+    }
+
+    .topbar__inner {
+        flex-direction: column;
+        gap: 8px;
+        padding: 8px 12px;
+    }
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Sử dụng font Poppins */
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: -4px auto;
+}
+
+.logo {
+    font-size: 26px; /* Tăng kích thước chữ */
+    font-weight: 500; /* Đậm chữ */
+    color: #695aa6;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    font-size: 16px;
+    font-weight: 400; /* Phông chữ bình thường cho các liên kết */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #695aa6;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1a1a27;
+}
+
+.components-btn {
+    background-color: #3bb6ab;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.components-btn:hover {
+    background-color: #2a8b7e;
+}
+
+
     </style>
 </head>
 
 <body>
     <!-- TOP BAR -->
-    <div class="topbar">
-        <div class="topbar__inner">
-            <nav class="topbar__links">
-                <a href="index.html">About</a>
-                <span class="divider">|</span>
-                <a href="cv.html">Contact</a>
-            </nav>
+   <!-- TOP BAR -->
+<header>
+        <nav class="navbar">
+            <div class="logo">iamchau</div>
+            <ul class="nav-links">
+                 <li class="item">
+                    <a class="link" href="index.html">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="cv.html">About</a>
+                </li>
 
-            <div class="topbar__social">
-                <a aria-label="Facebook" href="#"><i class="fab fa-facebook-f"></i></a>
-                <a aria-label="Twitter/X" href="#"><i class="fab fa-twitter"></i></a>
-                <a aria-label="Pinterest" href="#"><i class="fab fa-pinterest-p"></i></a>
-                <a aria-label="Vimeo" href="#"><i class="fab fa-vimeo-v"></i></a>
-                <a aria-label="YouTube" href="#"><i class="fab fa-youtube"></i></a>
-            </div>
-        </div>
-    </div>
+                <li class="item">
+                    <a class="link" href="blog.html">Blog</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="container">
-        <header>
+        <!-- <header>
             <h1>Bài viết mới</h1>
             <p>Các bài viết nổi bật về lập trình, web và công nghệ.</p>
-        </header>
+        </header> -->
 
         <div class="grid">
             <!-- Cột trái: bài viết -->
@@ -363,28 +497,24 @@
                             <span class="badge">1</span>
                             <div class="pop-text">
                                 <b>Các lớp và đối tượng trong Java</b>
-                                <small>6 phút đọc</small>
                             </div>
                         </li>
                         <li>
                             <span class="badge">2</span>
                             <div class="pop-text">
                                 <b>Cấu trúc điều khiển trong Java</b>
-                                <small>3 phút đọc</small>
                             </div>
                         </li>
                         <li>
                             <span class="badge">3</span>
                             <div class="pop-text">
                                 <b>Cách sử dụng hàm trong JavaScript</b>
-                                <small>8 phút đọc</small>
                             </div>
                         </li>
                         <li>
                             <span class="badge">4</span>
                             <div class="pop-text">
                                 <b>Cách sử dụng hàm trong JavaScript</b>
-                                <small>5 phút đọc</small>
                             </div>
                         </li>
                         <!-- Các bài viết phổ biến khác -->

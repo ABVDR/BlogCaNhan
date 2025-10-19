@@ -13,6 +13,8 @@
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.min.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+
 	<!--===============================================================================================-->
 	<style>
 		/* Style các phần tử nội dung bài viết */
@@ -36,6 +38,72 @@
 		.back-btn:hover {
 			background: #14532d;
 		}
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif; /* Sử dụng font Poppins */
+    background-color: #f8f8f8;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: -4px auto;
+}
+
+.logo {
+    font-size: 26px; /* Tăng kích thước chữ */
+    font-weight: 500; /* Đậm chữ */
+    color: #695aa6;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    font-size: 16px;
+    font-weight: 400; /* Phông chữ bình thường cho các liên kết */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #695aa6;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #1a1a27;
+}
+
+.components-btn {
+    background-color: #3bb6ab;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.components-btn:hover {
+    background-color: #2a8b7e;
+}
+
 	</style>
 </head>
 
@@ -43,25 +111,25 @@
 
 	<!-- Header -->
 	<header>
-		<div class="container-menu-desktop">
-			<div class="topbar">
-				<div class="content-topbar container h-100">
-					<div class="left-topbar">
-						<a href="cv.html" class="left-topbar-item">About</a>
-						<a href="cv.html" class="left-topbar-item">Contact</a>
-					</div>
+        <nav class="navbar">
+            <div class="logo">iamchau</div>
+            <ul class="nav-links">
+                 <li class="item">
+                    <a class="link" href="index.html">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="cv.html">About</a>
+                </li>
 
-					<div class="right-topbar">
-						<a href="#"><span class="fab fa-facebook-f"></span></a>
-						<a href="#"><span class="fab fa-twitter"></span></a>
-						<a href="#"><span class="fab fa-pinterest-p"></span></a>
-						<a href="#"><span class="fab fa-vimeo-v"></span></a>
-						<a href="#"><span class="fab fa-youtube"></span></a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</header>
+                <li class="item">
+                    <a class="link" href="blog.html">Blog</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
 
 	<!-- Breadcrumb -->
 	<div class="container">
